@@ -8,7 +8,7 @@ class Solution:
     def checkPalindrome(self, s):
         
         # a palindrome is always symmetric
-        # this in-order string = reversed order string
+        # thus in-order string = reversed order string
         return s == s[::-1]
     
     
