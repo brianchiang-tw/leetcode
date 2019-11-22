@@ -83,9 +83,37 @@ def test_bench():
         # update current
         current = current.next
 
+    # expected output
+    '''
+    1
+    1
+    2
+    3
+    4
+    4
+    5
+    6
+    '''
+
 
     return 
     
 if __name__ == "__main__":
 
     test_bench()
+
+
+# N : total number of element in all lists
+# k : number of sorted list
+
+ # Time complexity
+ # O( N log(k) )       
+ # Each min value pick-up takes log(k) from min heap data structure
+ # Procedure of merge k sorted lists needs O(N) times of min value pick-up
+
+ # Space complexity
+ # O( N ) + O ( k ), for most case k <= N
+ # O( N ) for saving all elements in the form of linked list
+ #
+ # O( N ) for saving all N elements in linked list
+ # O( k ) for the size of min heap for min value pick up

@@ -82,4 +82,14 @@ class Solution:
             
             return new_node
             
-        
+
+# N : total number of element in all lists
+# k : number of sorted list
+
+ # Time complexity
+ # O( Nk)       
+ # Each min value pick-up takes k comparison inside min() function
+ # Procedure of merge k sorted lists needs O(N) times of min value pick-up
+
+ # Space complexity
+ # O( N ) for saving all elements in the form of linked list
