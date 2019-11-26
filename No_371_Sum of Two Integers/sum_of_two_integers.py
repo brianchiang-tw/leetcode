@@ -22,21 +22,35 @@ class Solution:
         
         
         if b == 0:
-        # stop condition:   
+        # base case:   
             
             return a
         
         else:
-        # inductive step:
-        
-            # digit sum
-            sum = a ^ b
-            
-            # carry bit will propagate to higer bit by left shift
-            carry = a & b
-            
-            return sum + (carry << 1 )
-        
+        # general case:
+
+            # max of 32 bit integer
+            MAX = 0x7FFF_FFFF
+
+            # min of 32 bit integer
+            MIN = 0x8000_0000
+
+            # bitmask of 32 bit integer
+            Mask = 0xFFFF_FFFF
+
+            while b != 0:
+                sum = a ^ b
+                carry = a & b
+                a, b = (sum)&Mask, (carry << 1) & Mask
+
+            # if a is positive, direct return if a <= Max
+
+            # if a is negative, get a's 32 bits complement positive first
+            # then get 32-bit positive's Python complement negative
+            return a if a <= MAX else ~(a ^ Mask)
+
+
+
 
         
 if __name__ == "__main__":
@@ -45,5 +59,7 @@ if __name__ == "__main__":
     print( test_bench.getSum(1, 2) )
 
     print( test_bench.getSum(-2, 3) )
+
+    print( test_bench.getSum(-3, -5) )
     
     
