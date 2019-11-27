@@ -58,6 +58,7 @@ class Solution:
                 dual_value = target - two_sum
                 dual_tuple_set = value_hash.get( dual_value, None )
 
+                # check dual_value is in value hash
                 if dual_tuple_set is not None:
                     
                     for dual_tuple in dual_tuple_set:
@@ -68,14 +69,15 @@ class Solution:
                         if self.no_repeated_index(two_sum_tuple, dual_tuple) and quadruple not in solution:
                             solution.append( quadruple )
 
-
+                # check two_sum is in value hash
+                # if not, create a empty set for first-time look-up
                 if two_sum not in value_hash:
                     value_hash[ two_sum ] = set()        
 
                 else:
                     pass
 
-                    
+                # add one tuple (i, j) to value_hash where nums[i] + num[j] = two_sum as key
                 value_hash[ two_sum ].add( two_sum_tuple )
 
 
