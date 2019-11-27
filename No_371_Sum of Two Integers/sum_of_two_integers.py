@@ -49,8 +49,16 @@ class Solution:
             # then get 32-bit positive's Python complement negative
             return a if a <= MAX else ~(a ^ Mask)
 
+# N : the bits needed for binary presenation of input b
+#
+## Time Complexity : O( N )
+# the main task is the while loop
+# each itertaion takes O(1) to carry out binary operation
+# In summary, while loops has N iteration at most
+# Thus, the time complexity is O( N )
 
-
+## Space Complexity : O( 1 )
+# It takes O( 1 ) to create some variables to store the result of binary operation
 
         
 if __name__ == "__main__":
