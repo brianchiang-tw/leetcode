@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:
         
@@ -9,7 +11,7 @@ class Solution:
         
         
         # check existence of target
-        if target in nums:
+        if target in nums:       
             # target is already in nums, return the index
             return nums.index( target )
         
