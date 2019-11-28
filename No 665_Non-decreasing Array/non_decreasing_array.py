@@ -58,6 +58,16 @@ class Solution:
             return False
                     
 
+## Time Complexity : O( N )
+#
+# The for loop takes O(N) to scan each element and check for inversion
+
+## Space Complexity : O( 1 )
+#
+# The cost of space is to have variable for index i, inversion_count, as well as size_of_nums
+
+
+
 
 def test_bench():
 
