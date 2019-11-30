@@ -100,7 +100,6 @@ class Solution:
                 #
                 on_the_same_line[(delta_x, delta_y)] += 1
 
-            #print(" on the same line.value() : {}".format( on_the_same_line.values() )  )
 
             # get the max number of colinear points
             if len( on_the_same_line ) != 0:
@@ -108,9 +107,6 @@ class Solution:
 
             else:
                 current_max_num_pt_colinear = repeated_2D_point
-
-            #current_max_num_pt_colinear \
-            #= ( max( on_the_same_line.values() ) if max_num_of_points_colinear else 0 ) + repeated_2D_point
 
             # update the global max number of colinear points
             max_num_of_points_colinear \
