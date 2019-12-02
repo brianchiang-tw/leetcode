@@ -68,7 +68,12 @@ if __name__ == "__main__":
     # test case 1
     nums = [2, 7, 11, 15]
     target = 9
-        
+
+    # expected output:
+    '''
+    [0, 1]
+    '''
+
     result = test_bench.twoSum( nums, target )
     print( result )
 
@@ -77,6 +82,11 @@ if __name__ == "__main__":
     # test case 2
     nums = [3, 3]
     target = 6
+
+    # expected output:
+    '''
+    [0, 1]
+    '''
 
     result = test_bench.twoSum( nums, target )
     print( result )
