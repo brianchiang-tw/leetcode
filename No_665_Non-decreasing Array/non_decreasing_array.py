@@ -38,6 +38,7 @@ class Solution:
         for i in range( size_of_nums - 1 ):
             
             if nums[i] > nums[i+1]:
+                # catch a drop gap between i and i+1
                 
                 if inversion_count >= 1:
                     return False
@@ -46,8 +47,13 @@ class Solution:
                 
                 # adjust to keep non-decreasing order
                 if (i-1) < 0 or nums[i-1] <= nums[i+1] :
+
+                    # later one is higher than former one
+                    # lower current to the later one, in order to remvoe the peak at i
                     nums[i] = nums[i+1]
                 else:
+                    # later one is smaller than former one
+                    # enlarge later one as big as current one, in order to remove the drop at i+1
                     nums[i+1] = nums[i]
             
                     
