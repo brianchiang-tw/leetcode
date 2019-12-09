@@ -23,11 +23,11 @@ return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
 
 
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
 
 
 
@@ -59,3 +59,57 @@ class Solution:
 #
 # The overhead at each function call is flag variable of O(1)
 # And the cost of stack in recursion at each function call is O(1), and each node is visit once, total cost is O( N )
+
+
+
+
+
+def test_bench():
+
+
+#       5
+#      / \
+#     4   8
+#    /   / \
+#   11  13  4
+#  /  \      \
+# 7    2      1
+#
+# sum = 22
+#
+# path sum = 5 + 4 + 11 + 2 = 22
+    node_7 = TreeNode(7)
+    node_2 = TreeNode(2)
+    node_11 = TreeNode(11)
+    node_11.left = node_7
+    node_11.right = node_2
+
+    node_13 = TreeNode(13)
+
+    node_1 = TreeNode(1)
+    node_4 = TreeNode(4)
+    node_4.right = node_1
+
+    node_8 = TreeNode(8)
+    node_8.left = node_13
+    node_8.right = node_4
+
+    node_4 = TreeNode(4)
+    node_4.left = node_11
+
+    root = TreeNode(5)
+    root.left = node_4
+    root.right = node_8
+
+    target_sum = 22
+
+    # expected output:
+    '''
+    True
+    '''
+    print( Solution().hasPathSum(root, target_sum) )
+
+
+if __name__ == '__main__':
+
+    test_bench()
