@@ -68,7 +68,8 @@ def test_bench():
 
     test_data = [ 
                     ["a","a","b","b","c","c","c"],
-                    ["a","b","b","c","c","c"]
+                    ["a","b","b","c","c","c"],
+                    ["a","b","b","b","b","b","b","b","b","b","b","b","b"]
 
                 ]
 
@@ -76,6 +77,7 @@ def test_bench():
     '''
     6
     5
+    4
     '''
 
     for t in test_data:
