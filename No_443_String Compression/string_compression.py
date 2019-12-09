@@ -102,3 +102,45 @@ class Solution:
 
             # return the length of compression string
         return index_of_cluster
+
+
+# N : length of input list
+# k : max of length of clutsters
+
+## Time Complexity: O( N )
+#
+# The overhead is the outer while loop over i of O( N )
+# The for loop for writing is O( 1 ) because of length of string is a constant of O( 1 )
+# In summary, total time complexity is O( N )
+
+## Space Complexity: O( 1 )
+#
+# The overhead is the index variable and temp variable to record leading character as well as length of cluster.
+
+
+
+def test_bench():
+
+    test_data = [ 
+                    ["a","a","b","b","c","c","c"],
+                    ["a","b","b","c","c","c"]
+
+                ]
+
+    # expected output:
+    '''
+    6
+    5
+    '''
+
+    for t in test_data:
+
+        print( Solution().compress(t) )
+
+    return
+
+
+
+if __name__ == '__main__':
+
+    test_bench()
