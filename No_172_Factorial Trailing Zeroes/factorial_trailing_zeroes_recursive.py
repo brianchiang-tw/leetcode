@@ -19,7 +19,8 @@ Explanation: 5! = 120, one trailing zero.
 
 # Hint:
 # Trailing 0s are generated from the product of 5 x 2 pair.
-# And the bounding condition is 5 instead of 2 ( multiplier of 5 is less than multiplier of 2 within constant n! )
+# And the bounding condition is 5 instead of 2 
+# ( the number of multiplier of 5 is less than the number of multiplier of 2 within constant n! )
 #
 # Find the 5 x 2 pair can be reduced to find the number of factor 5 in n!
 
