@@ -21,6 +21,17 @@ class Solution:
         return missing_element
 
 
+# N : length of input series
+
+## Time Complexity: O( N )
+#
+# Though it seems like O( 1 ) at first glimpse, it is O( N ) actually due to the summation of input array, sum( nums).
+
+## Space Complexity : O( 1 )
+#
+# The overhead in space is the variable for n, missing_element, and gauss sumaation formula with fixed size.
+
+
 
 def test_bench():
 
