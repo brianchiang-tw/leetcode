@@ -59,6 +59,7 @@ def test_bench():
     True
     False
     True
+    True
     '''
 
 
