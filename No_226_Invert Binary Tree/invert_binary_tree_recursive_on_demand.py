@@ -43,6 +43,7 @@ class Solution:
         else:
             # non empty node
             
+            # swap left child, right child
             root.left, root.right = root.right, root.left
             
             if root.left:
