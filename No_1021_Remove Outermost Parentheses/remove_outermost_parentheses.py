@@ -51,7 +51,7 @@ class Solution:
         # for pairing of '(' and ')'
         symbol_stack = []
         
-        # storage for inner parentheses pair
+        # storage for inner parentheses pairs
         inner_pair = []
         
         # sotrage for current pair group
