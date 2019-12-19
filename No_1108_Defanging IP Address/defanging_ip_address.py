@@ -34,6 +34,23 @@ class Solution:
 
 
 
+# N : the lnegth of input string
+
+## Time Complexity: O(1)
+#
+# The overhead in time is to find and replace '.' with '[.]'.
+# In addition, description grarantees that input string is valid IPv4 Address
+# So there are at most 3 . replacements to execute.
+
+## Space Complexity: O(1)
+#
+# The overhead in space is to store the output string
+# In addition, description grarantees that input string is valid IPv4 Address
+# The worst cast is 255.255.255.255 -> 255[.]255[.]255[.]255 still of constant size.
+
+
+
+
 
 def test_bench():
 
