@@ -41,6 +41,7 @@ class Solution:
         while cur is not None:
             
             if cur.val == val:
+                #  hit
                 return cur
             
             elif cur.val > val:
@@ -49,6 +50,7 @@ class Solution:
             else:
                 cur = cur.right
         
+        # miss
         return None
 
 

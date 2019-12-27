@@ -37,9 +37,11 @@ class Solution:
     def searchBST(self, root: TreeNode, val: int) -> TreeNode:
         
         if root is None:
+            # miss
             return None
         else:
             if root.val == val: 
+                # hit
                 return root
             elif root.val > val: 
                 return self.searchBST(root.left, val)
