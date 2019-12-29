@@ -53,15 +53,15 @@ class Solution:
         return s_regenerate
 
 
-# N : the total number of tokens in input string
+# n : the total number of tokens in input string
 
-## Time Complexity: O( N )
+## Time Complexity: O( n )
 #
-# First, Tokenization takes O( N ) to scan each word and split
-# Secnond, to reverse a token list also takes O( N )
-# Finally, to insert whilespace between each token pair takes O( N ) as well.
+# First, Tokenization takes O( n ) to scan each word and split
+# Secnond, to reverse a token list also takes O( n )
+# Finally, to insert whilespace between each token pair takes O( n ) as well.
 
-## Space Complexity: O( 1 )
+## Space Complexity: O( n )
 #
 # Create some variable for string operation including tokenization, order reverse, as well as string join
 
