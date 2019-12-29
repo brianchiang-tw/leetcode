@@ -31,7 +31,7 @@ class Solution:
         
         for x in nums:
             
-            # does x makes sub-array sum bigger than x itself, 
+            # check if x makes sub-array sum bigger than x itself, 
             # if yes then pick it up
             # if no, just restart from x
             cur_acc_sum = max( cur_acc_sum + x, x)
