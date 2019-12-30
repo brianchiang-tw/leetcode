@@ -24,6 +24,19 @@ class Solution:
         return f'{(int(a, 2) + int(b, 2)):b}'
 
 
+# n : the max length between input a and b
+
+## Time Compleixty:
+#
+# The overhead in time is type conversion from bit-string to decimal value, which is of O( n ).
+# The cost of addition is of O( n ) also.
+
+## Space Complexity:
+#
+# The overhead in space is the storage for output bit-string, which is of O( n ).
+
+
+
 
 def test_bench():
 
@@ -37,7 +50,7 @@ def test_bench():
     100
     10101
     '''
-    
+
 
     for test_pair in test_data:
         print( Solution().addBinary( *test_pair ) )
