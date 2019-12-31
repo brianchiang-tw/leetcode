@@ -32,6 +32,7 @@ class Solution:
         
         while cur:
             
+            # detect and remove nodes of repitition
             if cur.next and cur.val == cur.next.val :
                 cur.next = cur.next.next
                 continue
