@@ -63,7 +63,8 @@ class Solution:
 
 ## Space Complexity: O( n )
 #
-# Create some variable for string operation including tokenization, order reverse, as well as string join
+# The overhead in space is storage for string operation,
+# including tokenization, order reverse, as well as string join.
 
 
 def test_bench():
