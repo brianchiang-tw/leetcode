@@ -72,7 +72,7 @@ class Solution:
                     else:
                         
                         # remove duplicate element whose length is over 2
-                        # keep idle until another difference new element is met
+                        # keep idle until another different new element is met
                         length += 1
                         
                 else:
@@ -82,7 +82,10 @@ class Solution:
                     last_head = cur
                     nums[ insert_pos ] = cur
                     insert_pos += 1
-                    
+
+
+
+        # new length of decorated array                    
         return insert_pos
 
 
