@@ -51,11 +51,11 @@ class Solution:
 
 # n : the length of input string
 
-## Time Complixity:
+## Time Complixity: O( n )
 # 
 # The overhead in time is the while loop iteration, which is of O( n / k ) = O( n ) where k is constant.
 
-## Space Complexity:
+## Space Complexity: O( n )
 #
 # The overhead in space is the storage for output sting, which is of the same length as input.
 # Thus, it takes O( n ).
