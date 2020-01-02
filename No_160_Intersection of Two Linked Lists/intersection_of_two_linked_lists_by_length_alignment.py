@@ -30,6 +30,8 @@ class Solution:
             
         return size
     
+
+
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> ListNode:
         
         size_of_a, size_of_b = self.getSize(headA), self.getSize(headB)
@@ -59,7 +61,6 @@ class Solution:
             headB = headB.next
             
 
-            
         return headA
 
 
