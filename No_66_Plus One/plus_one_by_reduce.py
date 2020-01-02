@@ -29,6 +29,7 @@ class Solution:
         
         func = lambda x,y: (10*x + y)
         
+        
         origin = reduce( func, digits )
         
         return list( str(origin+1) )
