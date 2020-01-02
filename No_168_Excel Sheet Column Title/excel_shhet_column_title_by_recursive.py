@@ -34,12 +34,16 @@ class Solution:
     def convertToTitle(self, n: int) -> str:
         
         if n <=26:
+            # base case
             return chr(64+n)
+        
         else:
             if n % 26 == 0:
+                # corner case handle for multiple of 26
                 return self.convertToTitle( (n-1)//26 ) + self.convertToTitle( 26 )
             
-            else:                
+            else:
+                # general case
                 return self.convertToTitle( (n-1)//26 ) + self.convertToTitle( (n) % 26 )
 
 
@@ -58,7 +62,7 @@ class Solution:
 
 def test_bench():
 
-    test_data = [1, 25, 26, 52, 53, 701]
+    test_data = [1, 25, 26, 27, 52, 53, 701]
 
 
     # expected output:
@@ -66,6 +70,7 @@ def test_bench():
     A
     Y
     Z
+    AA
     AZ
     BA
     ZY
