@@ -28,7 +28,7 @@ class Solution:
         while cur:
             
             if id(cur) in id_node_dict:
-                # with cycle, returm the junction node
+                # with cycle, return the junction node
                 return id_node_dict[id(cur)]
             
             else:
