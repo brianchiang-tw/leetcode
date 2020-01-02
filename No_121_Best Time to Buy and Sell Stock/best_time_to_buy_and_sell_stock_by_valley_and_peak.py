@@ -24,6 +24,9 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 
 from typing import List
+
+# Only long position (buy-and-sell) is allowed, required by problem description.
+
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         
