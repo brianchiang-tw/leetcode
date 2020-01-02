@@ -33,11 +33,11 @@ class Solution:
         
             word_low = word.lower()
             
-            flag =  all( ch in group[0] for ch in word_low ) or \
+            in_one_row =  all( ch in group[0] for ch in word_low ) or \
                     all( ch in group[1] for ch in word_low ) or \
                     all( ch in group[2] for ch in word_low )
             
-            if flag:
+            if in_one_row:
                 one_row_words.append(word)
                 
         return one_row_words
