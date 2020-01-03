@@ -28,16 +28,18 @@ class Solution:
     def helper(self, prev, cur):
         
         if cur:
+
+            # locate next hopping node
             next_hop = cur.next
             
-            if prev is None:
-                cur.next = None
-            else:
-                cur.next = prev
+            # reverse direction
+            cur.next = prev
         
             return self.helper( cur, next_hop)
         
         else:
+
+            # new head of reverse linked list
             return prev    
             
     

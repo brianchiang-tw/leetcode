@@ -30,16 +30,16 @@ class Solution:
         
         while cur:
             
+            # locate next hoppoing node
             next_hop = cur.next
             
-            if prev is None:
-                cur.next = None
-            else:
-                cur.next = prev
+            # reverse direction
+            cur.next = prev
                 
             prev = cur
             cur = next_hop
-            
+
+        # new head of reverse linked list    
         return prev
         
         
