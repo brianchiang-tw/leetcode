@@ -1,4 +1,4 @@
-'''
+/*
 
 Description:
 
@@ -29,10 +29,10 @@ Write a SQL query for a report that provides the following information for each 
 
 FirstName, LastName, City, State
 
-'''
+*/
 
 
-# Write your MySQL query statement below
+-- Write your MySQL query statement below
 SELECT Person.FirstName, Person.LastName, Address.City, Address.State
 FROM Person 
 LEFT JOIN Address ON Person.PersonId = Address.PersonId
