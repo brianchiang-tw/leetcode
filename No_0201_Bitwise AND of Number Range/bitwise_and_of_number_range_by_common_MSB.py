@@ -24,6 +24,7 @@ class Solution:
         
         shift = 0
         
+        # find the common MSB bits.
         while m != n:
             
             m = m >> 1
