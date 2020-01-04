@@ -117,7 +117,7 @@ class Solution:
         # Find mountain peak
         peak_index = self.findPeak(mountain_arr)
         
-        # Find target in up-hill,then down-hill, or target not exist
+        # Find target in up-hill,then down-hill, or target does not exist in montain
         index_of_target = self.findTarget( mountain_arr, peak_index, target)
         
         return index_of_target
