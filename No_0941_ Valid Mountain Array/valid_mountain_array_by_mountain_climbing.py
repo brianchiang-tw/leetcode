@@ -53,6 +53,7 @@ class Solution:
                     # direct go down, break the definition of mountain
                     return False
                 else:
+                    # mountain peak
                     break
                 
         
