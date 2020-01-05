@@ -51,9 +51,9 @@ class Solution:
 #
 # The overhead in time is the double for loop on sliding windows, which is of O( n*k )
 
-## Space Complexity: O( 1 )
+## Space Complexity: O( n )
 #
-# The overhead in space is the storage for looping variable, which is of O( 1 )
+# The major overhead in space is the storage for set, which is of O( n )
 
 
 def test_bench():
