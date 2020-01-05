@@ -20,23 +20,21 @@ The string will only contain lowercase characters a-z. The maximum length of the
 
 class Solution:
     
-    
-    def check_substr(self, s, left, right):
-    
-        while left < right:
-            if s[left] == s[right]:
-                left += 1
-                right -= 1
-            else:
+    def chk_substr(self, s: str, left, right) -> bool:
+        
+        size = right-left+1
+        
+        for i in range( size // 2):
+            
+            if s[left+i] != s[right-i]:
                 return False
             
         return True
+        
     
     def validPalindrome(self, s: str) -> bool:
         
         left, right = 0, len(s)-1
-        
-        skip = False
         
         while left <= right:
             
@@ -46,12 +44,12 @@ class Solution:
                 right -= 1
             
             else:
-                skip_one_on_right = self.check_substr(s, left, right-1)
+                skip_one_on_right = self.chk_substr(s, left, right-1)
                 
                 if skip_one_on_right:
                     return True
                 
-                skip_one_on_left = self.check_substr(s, left+1, right)
+                skip_one_on_left = self.chk_substr(s, left+1, right)
                 
                 if skip_one_on_left:
                     return True

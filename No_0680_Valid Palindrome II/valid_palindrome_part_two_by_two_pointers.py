@@ -36,8 +36,6 @@ class Solution:
         
         left, right = 0, len(s)-1
         
-        skip = False
-        
         while left <= right:
             
             if s[left] == s[right]:
@@ -46,14 +44,14 @@ class Solution:
                 right -= 1
             
             else:
-                skip_one_on_right = s[left:right]
+                skip_one_on_right = self.check_substr(s, left, right-1)
                 
-                if skip_one_on_right == skip_one_on_right[::-1]:
+                if skip_one_on_right:
                     return True
                 
-                skip_one_on_left = s[left+1:right+1]
+                skip_one_on_left = self.check_substr(s, left+1, right)
                 
-                if skip_one_on_left == skip_one_on_left[::-1]:
+                if skip_one_on_left:
                     return True
                 else:
                     return False
@@ -67,9 +65,9 @@ class Solution:
 #
 # The overhead in time is the for loop iterating on (left, right), which is of O( n )
 
-## Space Complexity: O( n )
+## Space Complexity: O( 1 )
 #
-# The overhead in space is the storage for string slice, s[ l:r ], which is of O( n )
+# The overhead in space is the storage for looping variable and boolean flag, which is of O( 1 )
 
 
 
