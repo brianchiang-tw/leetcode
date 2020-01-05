@@ -29,6 +29,17 @@ class Solution:
         return len(nums) != len( set(nums) )
 
 
+# n : the length of input array
+
+## Time Complexity: O( n )
+#
+# The overhead in time is to building the set of n elements and getting the length, which is of O( n )
+
+## Space Complexity: O( n )
+#
+# The overhead in space is the storage for the set of nums, which is of O( n )
+
+
 
 def test_bench():
 
