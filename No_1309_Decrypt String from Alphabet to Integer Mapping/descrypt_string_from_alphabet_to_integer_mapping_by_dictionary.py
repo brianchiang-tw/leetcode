@@ -62,14 +62,14 @@ class Solution:
             cur_code = ''
             
             if i+2 < size and s[i+2] == '#':
-                # quad digit code
+                # double digits code
                 cur_code = s[i:i+2]
             
                 # update index for next iteration
                 i += 3
                 
             else:
-                # uni digit code
+                # single digit code
                 cur_code = s[i]
                 
                 # update index for next iteration
