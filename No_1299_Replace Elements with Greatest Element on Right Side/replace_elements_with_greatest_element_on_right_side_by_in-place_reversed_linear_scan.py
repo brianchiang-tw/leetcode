@@ -31,15 +31,13 @@ class Solution:
         size = len(arr)
         right_hand_max = -1
         
-        ref_max = [0] * size
-        
         for i in range( size-1, -1, -1):
     
-            ref_max[i] = right_hand_max
-            right_hand_max = max( right_hand_max, arr[i])
-                
+            arr[i], right_hand_max = right_hand_max, max( right_hand_max, arr[i])
         
-        return ref_max
+        return arr
+
+
 
 # n : the length of input array, arr
 
@@ -47,9 +45,9 @@ class Solution:
 #
 # The overhead in time is the for loop iterating on i, which is of O( n )
 
-## Space Complexity: O( n )
+## Space Complexity: O( 1 )
 #
-# THe overhead in space is the storage for output, ref_max, which is of O( n )
+# THe overhead in space is the storage looping and max-update variabel, which is of O( 1 )
 
 
 
@@ -68,6 +66,7 @@ def test_bench():
     [10, 10, 10, 10, 10, 10, 10, 10, 10, -1]
     [9, 8, 7, 6, 5, 4, 3, 2, 1, -1]
     '''
+
 
     for sequence in test_data:
 
