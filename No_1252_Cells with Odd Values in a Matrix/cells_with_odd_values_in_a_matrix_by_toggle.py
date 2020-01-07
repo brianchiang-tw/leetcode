@@ -44,6 +44,7 @@ Constraints:
 # odd value element must be added with 1 by 2k+1 times = toggle 2k+1 times
 # where k = 0, 1, 2, 3, ...
 
+from typing import List
 class Solution:
     def oddCells(self, n: int, m: int, indices: List[List[int]]) -> int:
         
@@ -74,3 +75,40 @@ class Solution:
         
         
         return number_of_odds
+
+
+
+# n, m : the dimension of rows and columns
+# L : the length of operation sequence
+
+## Time Complexity: O( m * n + L )
+#
+# The overhead in time is the for loop iterating on operations, which is of O( L ),
+# and the loop iterating on (i, j), which is of O( m * n )
+# It takes O( m*n ) in total.
+
+
+## Space Complexity: O( m + n )
+#
+# The overhead in space is the storage for rows_flag as well as cols_flag, which si of O( m + n ).
+
+
+
+def test_bench():
+
+    test_data = [
+                    (2, 3, ([[0,1],[1,1]]) ),
+                    (2, 2, ([[1,1],[0,0]]) )
+                ]
+
+    for n, m , indices in test_data:
+
+        print( Solution().oddCells(n, m, indices) )
+    
+    return 
+
+
+
+if __name__ == '__main__':
+
+    test_bench()
