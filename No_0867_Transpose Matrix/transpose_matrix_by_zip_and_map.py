@@ -33,9 +33,40 @@ Note:
 
 # then use map with list over zip( *A) to make 2D array
 
+from typing import List
 class Solution:
     def transpose(self, A: List[List[int]]) -> List[List[int]]:
         
         a_transpose = list( map(list, zip(*A) ) )
         
         return a_transpose
+
+
+# m, m : row, col dimension of input array A
+
+## Time Complexity: O( m*n )
+#
+# The overhead in time is the list( map(list, zip(*A) ) ), which if of O( m*n  )
+
+## Space Complexity: O( m*n )
+#
+# The overhead in space is the storage of list( map(list, zip(*A) ) ), which if of O( m*n  )
+
+
+
+
+def test_bench():
+
+    test_arr = [ [1,2,3], [4,5,6] ]
+    
+    # expected output:
+    '''
+    [[1, 4], [2, 5], [3, 6]]
+    '''
+    print( Solution().transpose(test_arr) )
+
+
+
+if __name__ == '__main__':
+
+    test_bench()
