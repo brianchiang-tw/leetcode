@@ -37,7 +37,9 @@ class Solution:
         
         code_book = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
         
-        morse_codes = []
+        unique_morse_codes = set()
+        
+        
         
         for word in words:
             
@@ -47,9 +49,9 @@ class Solution:
 
                 morse += code_book[ index ]
             
-            morse_codes.append( morse )
+            unique_morse_codes.add( morse )
             
-        return len( set(morse_codes) )
+        return len( unique_morse_codes )
 
 
 
