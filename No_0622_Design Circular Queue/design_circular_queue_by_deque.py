@@ -125,3 +125,21 @@ class MyCircularQueue:
 # isEmpty   : O( 1 )
 #
 # isFull    : O( 1 )
+
+
+
+# Space Complexity:
+#
+# __init__  : O( k )
+#
+# deQueue   : O( 1 )
+#
+# enQueue   : O( 1 )
+#
+# Fonrt     : O( 1 )
+#
+# Rear      : O( 1 )
+#
+# isEmpty   : O( 1 )
+#
+# isFull    : O( 1 )
