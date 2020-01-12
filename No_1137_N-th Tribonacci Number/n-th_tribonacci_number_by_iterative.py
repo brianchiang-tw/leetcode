@@ -39,12 +39,15 @@ class Solution:
         
         t0, t1, t2 = 0, 1, 1
         
+        # base case:
         if n == 0 :
             return t0
         
+        # base case:
         if n == 1 or n == 2:
             return t1
         
+        # general case:
         for i in range(3, n+1):
             
             t_n = t0 + t1 + t2
