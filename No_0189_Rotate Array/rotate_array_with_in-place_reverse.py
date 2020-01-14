@@ -27,7 +27,21 @@ Could you do it in-place with O(1) extra space?
 '''
 
 
+from typing import List
 class Solution:
+    
+    
+    def reverse(self, nums: List[int], start, end):
+        
+        while start < end:
+            
+            nums[start], nums[end] = nums[end], nums[start]
+            
+            start += 1
+            end -= 1
+            
+            
+    
     def rotate(self, nums: List[int], k: int) -> None:
         """
         Do not return anything, modify nums in-place instead.
@@ -41,13 +55,13 @@ class Solution:
         
         
             # reverse all elements
-        nums[:] = nums[:][::-1]
+        self.reverse( nums, 0, size-1)
         
             # reverse first k elements
-        nums[:k] = nums[:k][::-1]
+        self.reverse( nums, 0, k-1)
         
             # reverse last (size - k) elements 
-        nums[k:] = nums[k:][::-1]
+        self.reverse( nums, k, size-1)
         
         return
 
