@@ -36,6 +36,7 @@ Local names do not start with a '+' character.
 '''
 
 
+from typing import List
 class Solution:
     def numUniqueEmails(self, emails: List[str]) -> int:
         
