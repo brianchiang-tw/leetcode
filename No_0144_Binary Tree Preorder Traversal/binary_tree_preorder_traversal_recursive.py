@@ -27,18 +27,24 @@ class TreeNode:
         self.left = None
         self.right = None
 
+
+
 class Solution:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
         
         traversal_path = []
-        if root:
+        
+        if not root:
+            return []
+        
+        else:
             # DFS with preorder:
             # current, current.left, current.right   
             traversal_path.append( root.val )
-            traversal_path += self.preorderTraversal( root.left )
-            traversal_path += self.preorderTraversal( root.right )
+            traversal_path.extend( self.preorderTraversal( root.left ) )
+            traversal_path.extend( self.preorderTraversal( root.right ) )
             
-        return traversal_path
+            return traversal_path
 
 
 
