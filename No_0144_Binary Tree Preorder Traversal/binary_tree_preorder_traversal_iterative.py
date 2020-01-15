@@ -38,7 +38,11 @@ class Solution:
             
             current = stack_preorder.pop()
             
-            if current:
+            if not current:
+                # empty node or empty tree
+                continue
+                
+            else:
                 
                 # DFS with preorder:
                 # current, current.left, current.right   
