@@ -31,12 +31,15 @@ class Solution:
     def postorderTraversal(self, root: TreeNode) -> List[int]:
         
         traversal_path = []
-        
-        if root:
+        if not root:
+            # empty node or empty tree
+            return []
+
+        else:
             # DFS with postorder 
             # right child, left child, current node
-            traversal_path += self.postorderTraversal( root.left )
-            traversal_path += self.postorderTraversal( root.right )
+            traversal_path.extend( self.postorderTraversal( root.left ) )
+            traversal_path.extend( self.postorderTraversal( root.right ) )
             
             traversal_path.append( root.val )
             

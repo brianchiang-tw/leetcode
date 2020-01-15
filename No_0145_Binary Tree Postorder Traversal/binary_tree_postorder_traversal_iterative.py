@@ -27,6 +27,8 @@ class TreeNode:
         self.left = None
         self.right = None
 
+
+
 class Solution:
     def postorderTraversal(self, root: TreeNode) -> List[int]:
         
@@ -36,8 +38,12 @@ class Solution:
         while stack_postorder:
 
             current, label = stack_postorder.pop()
+            
+            if not current:
+                # empty node
+                continue
 
-            if current and label != "c":
+            elif label != "c":
 
                 # DFS with postorder
                 # left child, right child, current node
@@ -49,7 +55,7 @@ class Solution:
                 stack_postorder.append( (current.right, "r") )
                 stack_postorder.append( (current.left, "l") )
             
-            elif current and label == "c":
+            elif label == "c":
 
                 traversal_path.append( current.val )
 
