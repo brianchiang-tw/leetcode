@@ -74,7 +74,7 @@ class Solution:
 #
 # The overhead in time is the in-order-traversal of binary search tree, which is of O( n ).
 
-## Space Complexity : O( m )
+## Space Complexity : O( n )
 #
 # The overhead in space is the call stack for recursion and array, arr, which are both of O( n ).
 
