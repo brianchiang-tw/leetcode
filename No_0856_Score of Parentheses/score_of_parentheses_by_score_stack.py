@@ -90,6 +90,20 @@ class Solution:
 
 
 
+# n : the length of input string, S.
+
+## Time Complexity: O( n )
+#
+# The overhead in time is the for loop iterating on ch, which is of O( n ),
+
+
+
+## Space Complexity: O( n )
+#
+# The overhead in space is the storage for score_stack, which is of O( n ).
+
+
+
 def test_bench():
 
     test_data = [
