@@ -65,18 +65,18 @@ class Solution:
             
             # path is un-directed
             # convert path to corresponding linkage in adjacency list
-            adjacenct_list[ garden_a-1].append( garden_b-1 )
-            adjacenct_list[ garden_b-1].append( garden_a-1 )
+            adjacenct_list[ garden_a - 1] .append( garden_b - 1 )
+            adjacenct_list[ garden_b - 1 ].append( garden_a - 1 )
         
         
         # assign flower type to each garden
         for garden in range(N):
             
-            neighbor_flower_type = []
+            neighbor_flower_type = set()
             
             # collect flower type of neighborhood
             for neighbor in adjacenct_list[garden]:    
-                neighbor_flower_type.append( flower_type_garden[neighbor] )
+                neighbor_flower_type.add( flower_type_garden[neighbor] )
 
             # flower types are denoted 1, 2, 3, 4
             for flower_type in range(1,5):
