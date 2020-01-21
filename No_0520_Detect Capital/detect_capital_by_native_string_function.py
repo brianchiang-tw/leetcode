@@ -36,9 +36,10 @@ class Solution:
         flag_capital = word.istitle() or word.isupper()
         
         #if it is of all lower-case letters already
-        flag_non_capital = word.islower()
+        flag_all_lower_case = word.islower()
         
-        if flag_capital or flag_non_capital:    
+        if flag_capital or flag_all_lower_case:    
+            # Accept:
             return True
         
         else:
