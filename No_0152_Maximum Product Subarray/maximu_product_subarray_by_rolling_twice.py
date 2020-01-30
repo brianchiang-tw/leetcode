@@ -31,13 +31,16 @@ class Solution:
         
         # update product of two kinds of subarray, one is extends from left to right, the other is from right to left
         for i in range(1, size):
+
+            #print()
             
             # extends from left hand side, if meets 0 then restart in-place by itself.
             product_left_to_right[i] *= (product_left_to_right[i-1] or 1)
-            
+            #print( f'left to right: {product_left_to_right}')
+
             # extends from right hand sizde, if meets 0 then restart in-place by itself
             product_right_to_left[i] *= (product_right_to_left[i-1] or 1)
-        
+            #print( f'right to left: {product_right_to_left}')
 
         return max(max(product_left_to_right), max(product_right_to_left))
 
@@ -61,7 +64,8 @@ def test_bench():
     test_data = [
                     [2,3,-2,4],
                     [-2,0,-1],
-                    [-10,5,-3,7,0,6,-8,-9,21]
+                    [-10,5,-3,7,0,6,-8,-9,21],
+                    [0,2,3,4,0]
                 ]
 
     # expected output:
@@ -69,6 +73,7 @@ def test_bench():
     6
     0
     9072
+    24
     '''
 
     for sequence in test_data:
