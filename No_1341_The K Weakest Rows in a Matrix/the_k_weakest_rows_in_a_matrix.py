@@ -70,12 +70,15 @@ class Solution:
         for i,row in enumerate(mat):
             
             strength.append( (row.count(1), i) )
-            
+        
+        print( strength )
         
         # sort strength in ascending order by
         # 1. number of soldier
-        # 2. number of row index
+        # 2. row index
         strength.sort(key = itemgetter(0,1) )
+
+        print( strength )
         
         # get the first k items's row index
         result = list( map( itemgetter(1), strength[:k] ) )
@@ -102,7 +105,7 @@ def test_bench():
 
     test_data = [
                     ([[1,1,0,0,0],[1,1,1,1,0],[1,0,0,0,0],[1,1,0,0,0],[1,1,1,1,1]], 3),
-                    ([[1,0,0,0], [1,1,1,1], [1,0,0,0], [1,0,0,0]], 2)
+                    #([[1,0,0,0], [1,1,1,1], [1,0,0,0], [1,0,0,0]], 2)
                 ]
     
 
