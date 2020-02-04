@@ -50,7 +50,7 @@ class Solution:
 
 ## Time Complexity: O( log n )
 #
-# The overhead in time is the cost of logarithm computation, which is of O( log n ).
+# The overhead in time is the cost of bit scan, which is of O( log n ).
 
 ## Space Complexity: O( 1 )
 #
