@@ -15,7 +15,18 @@ Note: In the string, each word is separated by single space and there will not b
 class Solution:
 
     def reverseWords(self, s):
-        return ' '.join(s.split()[::-1])[::-1]
+        
+        # parse and get each string token
+        tokens = list( map( str, s.split() ) )
+        
+        # reverse each string token
+        for i in range( len(tokens) ):
+            tokens[i] = tokens[i][::-1]
+        
+        print(tokens)
+
+        # concatenate string token together, separated by one whitespace
+        return ' '.join( tokens )
 
 
 # n : the length of the input string
