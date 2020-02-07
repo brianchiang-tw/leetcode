@@ -5,11 +5,18 @@ class Solution:
     
     def findNumbers(self, nums: List[int]) -> int:
         
+        # convert all number to string, store in list
         strnum_list = list( map( str, nums) )
-
-        list_even_num_of_digits =  list( filter( lambda x: (len(x)%2==0),  strnum_list) )
         
+        # a functor to judge if a string is with even number digits
+        func_even_digits = lambda x: (len(x)%2==0)
+        
+        # use functor to select those strings with even number digits
+        list_even_num_of_digits =  list( filter( func_even_digits,  strnum_list) )
+        
+        # total count of even digits number
         return len( list_even_num_of_digits )
+        
 
 
 
