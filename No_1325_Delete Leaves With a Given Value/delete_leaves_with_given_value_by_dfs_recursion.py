@@ -124,7 +124,7 @@ class Solution:
 
 ## Time Complexity: O( n )
 #
-# The overhead in time is the cost of pre-oreder DFS traversal, which is of O( n ).
+# The overhead in time is the cost of post-oreder DFS traversal, which is of O( n ).
 
 ## Space Complexity: O( h )
 #
