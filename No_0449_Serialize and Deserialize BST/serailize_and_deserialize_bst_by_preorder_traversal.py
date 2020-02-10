@@ -102,8 +102,18 @@ def inorder_print( node:TreeNode):
 
 
 
+def preoreder_print( node:TreeNode):
+
+    if node:
+
+        print(f'{node.val} ', end = '' )
+        preoreder_print( node.left )
+        preoreder_print( node.right )
+
+
 def test_bench():
 
+    ## Test case_#1
     root = TreeNode(4)
 
     root.left = TreeNode(2)
@@ -138,6 +148,46 @@ def test_bench():
 
     print("\nafter recovery from serialization")
     inorder_print( root )
+
+
+
+    ## Test case_#2
+
+
+
+    root_2 = TreeNode(3)
+
+    root_2.left = TreeNode(2)
+    root_2.right = TreeNode(5)
+
+    root_2.left.left = TreeNode(1)
+
+    root_2.right.left = TreeNode(4)
+    root_2.right.right = TreeNode(6)
+
+
+
+    # expected output:
+    '''
+    before serialization
+    1 2 3 4 5 6 7
+    after recovery from serialization
+    1 2 3 4 5 6 7
+    '''
+
+    print("before serialization")
+    inorder_print( root_2 )
+
+    coder = Codec()
+
+    # serialization
+    serialization = coder.serialize( root_2 )
+
+    # de-serialization
+    coder.deserialize( serialization )
+
+    print("\nafter recovery from serialization")
+    inorder_print( root_2 )
 
 
 
