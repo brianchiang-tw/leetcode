@@ -28,7 +28,7 @@ class Codec:
         # generate shour url
         short_url = header + str(url_id)
 
-
+        # update key-value pair in dictionary, url_table
         self.url_table[url_id] = longUrl
         
         return short_url
