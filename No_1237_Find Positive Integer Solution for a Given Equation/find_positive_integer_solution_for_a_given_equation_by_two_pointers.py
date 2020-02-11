@@ -97,3 +97,8 @@ class Solution:
 ## Space Complexity: O( n )
 #
 # The overhead in space is the storage for all solution pairs( n )
+
+
+
+# We dont have the test bench in thie py file, 
+# because the function detail is hidden.
