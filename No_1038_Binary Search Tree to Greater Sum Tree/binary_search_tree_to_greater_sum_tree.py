@@ -45,7 +45,7 @@ class Solution:
             return None
 
         else:
-            # DFS to next level
+            # DFS to next level with order:( right, current, left )
             self.helper( node.right )
 
             self.accumulation_sum += node.val
@@ -59,6 +59,7 @@ class Solution:
         
     def bstToGst(self, root: TreeNode) -> TreeNode:
         
+        # accumulation sum of nodes
         self.accumulation_sum = 0
                         
         return self.helper( root )
