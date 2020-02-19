@@ -33,32 +33,20 @@ class Solution:
     def sortedArrayToBST(self, nums: List[int]) -> TreeNode:
         
         if len(nums) == 0:
-            # Base case:
-            # empty list
+			# Base case: ( also known as stop condtion )
             return None
         
-
-        elif len(nums) == 1:
-            # Base case:
-            # list with only one element
-            return TreeNode(nums[0])
-        
-
         else:
-            # Inductive step:
-            # top-down binary search tree creation
+            # General case:
+			# Solve by divide-and-conquer
+			
+			# conquer
             mid = len(nums)//2
-            median = nums[ mid ]
+            root = TreeNode(  nums[ mid ] )
 
-            root = TreeNode( median )
-
-            # Divide
-            left_child = self.sortedArrayToBST( nums[:mid] )
-            right_child = self.sortedArrayToBST( nums[mid+1:])
-
-            # Conquer
-            root.left = left_child
-            root.right = right_child
+			# divide
+            root.left = self.sortedArrayToBST( nums[:mid] )
+            root.right = self.sortedArrayToBST( nums[mid+1:])
 
             return root
 
