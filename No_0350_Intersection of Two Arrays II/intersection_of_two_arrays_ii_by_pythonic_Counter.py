@@ -30,15 +30,17 @@ What if elements of nums2 are stored on disk, and the memory is limited such tha
 
 
 from collections import Counter
+
 class Solution:
     def intersect(self, nums1, nums2):
-
-        # a is Counter of nums1
-        # b is Counter of nums2
+        
+        # Create two dictionaries for nums1 and nums2
+        
+        # key   : element
+        # value : occurrence
         a, b = map(Counter, (nums1, nums2))
-
-        # compute intersection of a and b, then convert it to list
-        return list((a & b).elements())
+        
+        return list( (a & b).elements()) 
 
 
 

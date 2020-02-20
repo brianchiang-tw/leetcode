@@ -36,24 +36,19 @@ class Solution:
         
         # key   : number
         # value : occurrence
-        
-        num_occ_dict_1 = Counter(nums1)
-        num_occ_dict_2 = Counter(nums2)
+        num_occ_dict_1, num_occ_dict_2 = map(Counter, (nums1, nums2))
         
         # list for intersection output
         list_of_intersection = []
+
+        # let the shorter dictionary placed on the front
+        if len(num_occ_dict_1) > len(num_occ_dict_2):
+            num_occ_dict_1, num_occ_dict_2 = num_occ_dict_2, num_occ_dict_1
         
-        # create list of intersection based on occurrence of number
-        # select the dictionary which is the shorter one.
-        if len(num_occ_dict_1) <= len(num_occ_dict_2):
-            for num_as_key in num_occ_dict_1:
-                list_of_intersection.extend( [num_as_key] * min( num_occ_dict_1[num_as_key], num_occ_dict_2[num_as_key] ) )
-                
-        else:
-            for num_as_key in num_occ_dict_2:
-                list_of_intersection.extend( [num_as_key] * min( num_occ_dict_1[num_as_key], num_occ_dict_2[num_as_key] ) )
-            
-            
+        # create list of intersection by list comrephension
+        for num_as_key in num_occ_dict_1:
+            list_of_intersection.extend( [num_as_key] * min( num_occ_dict_1[num_as_key], num_occ_dict_2[num_as_key] ) )
+           
         return list_of_intersection
 
 
