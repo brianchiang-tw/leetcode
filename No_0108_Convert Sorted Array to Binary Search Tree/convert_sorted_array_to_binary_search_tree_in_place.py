@@ -32,24 +32,29 @@ class TreeNode:
 class Solution:
     def sortedArrayToBST(self, nums: List[int]) -> TreeNode:
         
-        if len(nums) == 0:
-			# Base case: ( also known as stop condtion )
-            return None
-        
-        else:
-            # General case:
-			# Solve by divide-and-conquer
-			
-			# conquer
-            mid = len(nums)//2
-            root = TreeNode(  nums[ mid ] )
 
-			# divide
-            root.left = self.sortedArrayToBST( nums[:mid] )
-            root.right = self.sortedArrayToBST( nums[mid+1:])
+        def helper( left, right):
 
-            return root
+            if left > right:
+                # Base case: ( also known as stop condtion )
+                return None
+            
+            else:
+                # General case:
+                # Solve by divide-and-conquer
+                
+                # conquer
+                mid = left + (right-left)//2
+                root = TreeNode(  nums[ mid ] )
 
+                # divide
+                root.left = helper( left, mid-1 )
+                root.right = helper( mid+1, right )
+
+                return root
+
+        # ----------------------
+        return helper( 0, len(nums)-1 )
 
 
 # N : the number of elements in input
