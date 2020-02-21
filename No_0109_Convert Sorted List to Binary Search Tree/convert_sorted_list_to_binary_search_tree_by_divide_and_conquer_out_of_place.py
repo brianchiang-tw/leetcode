@@ -95,9 +95,10 @@ class Solution:
 # For array_to_BST(),
 # it takes T( n ) = 2T( n / 2) + O( n ), T( n ) is of O( n log n ).
 
-## Space Complexity: O( n )
+## Space Complexity: O( n log n )
 #
-# The overhead in space is the storage for temporary array, and binary search tree, which is of O( n ).
+# The overhead in space is copying of sub-list with recursion S(n) = S(n) * S(n/2) + O(n)
+# S( n ) = O( n log n )
 
 
 
