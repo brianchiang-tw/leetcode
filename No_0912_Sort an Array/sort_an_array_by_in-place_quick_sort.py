@@ -28,12 +28,6 @@ Constraints:
 from typing import List
 class Solution:
     
-    def already_sorted( self, nums, left, right ) -> bool:
-        
-        return left == right or all( (nums[i] <= nums[i+1]) for i in range( left, right ) )
-    
-    
-    
     def partition(self, nums: List[int], left: int, right: int) -> int:
     
         i = left - 1
