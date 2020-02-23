@@ -27,47 +27,27 @@ Both numbers with value 2 are both considered as second maximum.
 '''
 
 
-import heapq
+from heapq import heapify, heappop
 from typing import List
 class Solution:
     def thirdMax(self, nums: List[int]) -> int:
         
+        unique_nums = set(nums)
+
+        if len(unique_nums) < 3:
+            return max( nums )
+
         # use native min-heap to find maximal number
-        negation = lambda x: -x
-        nums = list( map( negation, nums) )
+        unique_nums = [ -e for e in unique_nums]
         
         # build min-heap on input nums in-place
-        heapq.heapify( nums )
+        heapify( unique_nums )
         
-        # record global max for nums' length < 3
-        global_max = 0
-
-        # record lastest max element and previous max element
-        cur_max_element, prev_max_element = -2**31, -2**31
-
-        # record count of distinct max
-        distinct_max = 0
-        while nums and distinct_max != 3:
+        # pop 3rd maximum element
+        for _ in range(3):
+            value = heappop( unique_nums )
             
-            # get currnet max element from min-heap
-            cur_max_element = heapq.heappop(nums)
-            
-            # update global max
-            if distinct_max == 0:
-                global_max = cur_max_element
-            
-            # update count of distinct max
-            if cur_max_element != prev_max_element:
-                distinct_max += 1
-                prev_max_element = cur_max_element
-        
-        
-        if distinct_max != 3:
-            # nums is too short, without 3rd maximum element
-            return negation( global_max )
-        else:
-            # nums is long enough to have 3rd maximum element
-            return negation( cur_max_element )
+        return -value
 
 
 
