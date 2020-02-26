@@ -79,9 +79,9 @@ class Solution:
 #
 # The overhead in time is the cost of DFS traversal, which is of O( n )
 
-## Space Complexity: O( n ) in total, O( 1 ) in aux space
+## Space Complexity: O( log n ) in total, O( 1 ) in aux space
 #
-# The overhead in space is the storage for call stack.
+# The overhead in space is the storage for call stack, since it is a perfect binary tree, thus of O( log n).
 # The aux space is temporary node, which is of O( 1 ).
 
 
