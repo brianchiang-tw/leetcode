@@ -86,7 +86,7 @@ class Solution:
 
 
 from collections import deque
-def print_level_order_traversal( node ):
+def print_level_order_traversal( node: 'Node' ):
 
     traversal_queue = deque([node])
 
