@@ -33,12 +33,12 @@ class Solution:
         
         for s in strs:
             
+            # use sorted string with acsii order as key of dictionary
             ordered_s = ''.join(sorted(s))
             
             anagram_dict[ordered_s].append( s )
                 
-        return [ anagram_dict[key_string] for key_string in anagram_dict ]
-
+        return anagram_dict.values()
 
 
 # n : the number of strings in input strs.
