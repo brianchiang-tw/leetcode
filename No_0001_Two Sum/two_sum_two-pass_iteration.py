@@ -59,34 +59,36 @@ class Solution:
         # return index of nums that makes the sum equal to target
         return solution
 
+
+
+# n : the length of input array
+
+## Time Complexity: O( n )
+#
+# The overhead in time is the for loop, iterating on nums, which is of O( n )
+
+## Space Complexity: O( n )
+#
+# The overhead in space is the storage for dictionary, number_dictionary, which is of O( n )
     
     
+
+from collections import namedtuple
+TestEntry = namedtuple('TestEntry', 'array target')
+def test_bench():
+
+    test_data = [
+                    TestEntry( array = [2, 7, 11, 15], target = 9),
+                    TestEntry( array =[3, 4, 3, 1], target = 6),
+                ]
+    for t in test_data:
+
+        print( Solution().twoSum( nums = t.array, target = t.target ) )
+
+    return
+
+
+
 if __name__ == "__main__":
     
-    test_bench = Solution() 
-
-    # test case 1
-    nums = [2, 7, 11, 15]
-    target = 9
-
-    # expected output:
-    '''
-    [0, 1]
-    '''
-
-    result = test_bench.twoSum( nums, target )
-    print( result )
-
-
-
-    # test case 2
-    nums = [3, 3]
-    target = 6
-
-    # expected output:
-    '''
-    [0, 1]
-    '''
-
-    result = test_bench.twoSum( nums, target )
-    print( result )
+    test_bench()
