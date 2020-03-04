@@ -27,35 +27,33 @@ Given target = 20, return false.
 from typing import List
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int)-> bool:
-
+        
         
         if not len(matrix) or not len(matrix[0]):
+            # Quick response for empty matrix
             return False
         
         h, w = len(matrix), len(matrix[0])
         
-        # Start adaptive search from bottom left corner
-        y, x = h-1, 0
+        for row in matrix:
         
-        while True:
-            
-            if y < 0 or x >= w:
-                break
-            
-            current = matrix[y][x]
-            
-            if target < current:
-                # target is smaller, then go up
-                y -= 1
-            
-            elif target > current:
-                # target is larger, then go right
-                x += 1
-            
-            else:
-                # hit target
-                return True
-            
+            if row[0] <= target <= row[-1]:
+                
+                left, right = 0, w-1
+                
+                while left <= right:
+                    
+                    mid = left + (right - left) // 2
+                    
+                    mid_value = row[mid]
+                    
+                    if target > mid_value:
+                        left = mid+1
+                    elif target < mid_value:
+                        right = mid-1
+                    else:
+                        return True
+                
         return False
 
 
@@ -63,9 +61,11 @@ class Solution:
 # m : the dimension of row of input matrix
 # n : the dimension of column of input matrix            
 
-## Time Complexity: O( m + n )
+## Time Complexity: O( m log n )
 #
-# The overhead in time is the maximum finding path, which is of O( m + n )
+# The overhead in time is the for loop, which is of O( m ), and
+# the cost of binary search, which is of O( log n )
+# It takes O( m log n ) in total.
 
 ## Space Complexity: O( 1 )
 #
