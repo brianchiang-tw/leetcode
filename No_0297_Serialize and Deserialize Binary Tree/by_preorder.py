@@ -32,6 +32,8 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+from collections import deque
+
 class Codec:
 
     def serialize(self, root):
@@ -106,3 +108,50 @@ class Codec:
 ## Space Complexity: O( n )
 #
 # The overhead in space is the cost of recursion call stack, which is of O( n ).
+
+
+def in_order( node ):
+
+    if node:
+
+        in_order( node.left )
+        print( node.val, end = ' ')
+        in_order( node.right )
+
+
+def test_bench():
+
+    root_1 = TreeNode( 1 )
+    
+    root_1.left = TreeNode( 2 )
+    root_1.right = TreeNode( 3 )
+
+    root_1.right.left = TreeNode( 4 )
+    root_1.right.right = TreeNode( 5 )
+
+
+    # expected output:
+    '''
+     before :
+    2 1 4 3 5
+     after :
+    2 1 4 3 5
+    '''
+
+    # Before serialization and deserialization:
+    print(" before : ")
+    in_order( root_1 )
+    
+    serialization =  Codec().serialize( root_1 ) 
+    root_of_tree = Codec().deserialize( serialization )
+    print("\n after : ")
+    # After serialization and deserialization:
+    in_order( root_of_tree )
+
+    return
+
+
+
+if __name__ == '__main__':
+
+    test_bench()
