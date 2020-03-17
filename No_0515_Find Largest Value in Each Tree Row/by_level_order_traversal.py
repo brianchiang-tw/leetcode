@@ -19,7 +19,15 @@ Output: [1, 3, 9]
 
 
 
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
 from collections import deque
+from typing import List
 
 class Solution:
     def largestValues(self, root: TreeNode) -> List[int]:
@@ -66,3 +74,29 @@ class Solution:
 ## Space Complexity: O( n )
 #
 # The overhead in space is the storage for traversal queue, which is of O( n ).
+
+
+
+def test_bench():
+
+    root_1 = TreeNode( 1 )
+    
+    root_1.left = TreeNode( 3 )
+    root_1.right = TreeNode( 2 )
+
+    root_1.left.left = TreeNode( 5 )
+    root_1.left.right = TreeNode( 3 )
+    root_1.right.right = TreeNode( 9 )
+
+    # expected output:
+    '''
+    [1, 3, 9]
+    '''
+    
+    print( Solution().largestValues( root = root_1 ) )
+
+
+
+if __name__ == '__main__':
+
+    test_bench()
