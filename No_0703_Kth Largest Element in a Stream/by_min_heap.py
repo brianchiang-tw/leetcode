@@ -66,6 +66,11 @@ class KthLargest:
 # O( n log n ) for __init()__
 # O( log k ) for add
 
+
+## Space Complexity:
+#
+# O( k ) to keep the min-heap 
+
 from collections import namedtuple
 TestEntry = namedtuple('TestEntry', 'array k add_sequence')
 def test_bench():
