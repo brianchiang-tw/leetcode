@@ -69,6 +69,18 @@ class Solution:
 
 
 
+# n : the length of input list, arr.
+
+## Time Complexity: O( n )
+#
+# The overhead in time is the cost of dictionary building, and maximum finding, which are of O( n )
+
+## Space Complexity: O( n )
+#
+# The overhead in space is the storage for dictionary, which is of O( n )
+
+
+
 
 from collections import namedtuple
 TestEntry = namedtuple('TestEntry', 'sequence')
