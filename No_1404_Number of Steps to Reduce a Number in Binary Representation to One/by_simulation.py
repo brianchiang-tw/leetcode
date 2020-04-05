@@ -73,6 +73,18 @@ class Solution:
 
 
 
+# n : the length of input bitstring
+
+## Time Complexity: O( n )
+#
+# The overhead in time is the cost of while loop, which is of O( n )
+
+## Space Complexity: O( 1 )
+#
+# The overhead in space is the storage for looping index and temporary variable, which is of O( 1 )
+
+
+
 from collections import namedtuple
 TestEntry = namedtuple('TestEntry', 'bitstring')
 def test_bench():
@@ -84,6 +96,15 @@ def test_bench():
                      TestEntry( bitstring = "1101110100101011000101011101001" ),
                      TestEntry( bitstring = "1011" ),
                 ]
+
+    # expected output:
+    '''
+    6
+    1
+    0
+    46
+    6
+    '''
 
     for t in test_data:
         print( Solution().numSteps(s=t.bitstring) )
