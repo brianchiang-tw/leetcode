@@ -50,9 +50,9 @@ class Solution:
 # and the cost of sorted(s), which is of O( k log k ).
 # It takes O( n k log k ) in total.
 
-## Space Complexity: O( n )
+## Space Complexity: O( n * k)
 #
-# The overhead in space is the storage for dictionary, anagram_dict, which is of O( n )
+# The overhead in space is the storage for dictionary, which is of O( n * k )
                 
 
 from collections import namedtuple
