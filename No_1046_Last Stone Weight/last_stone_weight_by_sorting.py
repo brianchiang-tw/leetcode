@@ -94,6 +94,12 @@ def test_bench():
                     [10,20,15,8,5]
                 ]
 
+    # expected output:
+    '''
+    1
+    2
+    '''
+
     for stone_sequence in test_data:
 
         print( Solution().lastStoneWeight(stone_sequence) )
