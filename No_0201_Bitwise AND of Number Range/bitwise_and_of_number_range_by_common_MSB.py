@@ -57,6 +57,13 @@ def test_bench():
                     (2**20, 2**20+7)
                 ]
 
+    # expected output:
+    '''
+    4
+    0
+    1048576
+    '''
+
     for m, n in test_data:
         print( Solution().rangeBitwiseAnd(m, n) )
 
