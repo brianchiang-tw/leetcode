@@ -70,6 +70,14 @@ def test_bench():
                     [10,20,5,7,3,9,2,6,11]
                 ]
 
+
+    # expected output:
+    '''
+    [24, 12, 8, 6]
+    [120, 24, 60, 30, 40]
+    [2494800, 1247400, 4989600, 3564000, 8316000, 2772000, 12474000, 4158000, 2268000]
+    '''
+
     for sequence in test_data:
 
         print( Solution().productExceptSelf(sequence) )
