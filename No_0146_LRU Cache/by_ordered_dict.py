@@ -85,7 +85,7 @@ class LRUCache:
 def test_bench():
 
     # create a LRU Cache with size = 2
-    cache = LRUCache( 2 );
+    cache = LRUCache( 2 )
 
     # expected output
     '''
