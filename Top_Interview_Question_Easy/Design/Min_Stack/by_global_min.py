@@ -1,7 +1,5 @@
 '''
 
-Description:
-
 Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
 
 push(x) -- Push element x onto stack.
@@ -10,20 +8,35 @@ top() -- Get the top element.
 getMin() -- Retrieve the minimum element in the stack.
  
 
-Example:
+Example 1:
 
+Input
+["MinStack","push","push","push","getMin","pop","top","getMin"]
+[[],[-2],[0],[-3],[],[],[],[]]
+
+Output
+[null,null,null,null,-3,null,0,-2]
+
+Explanation
 MinStack minStack = new MinStack();
 minStack.push(-2);
 minStack.push(0);
 minStack.push(-3);
-minStack.getMin();   --> Returns -3.
+minStack.getMin(); // return -3
 minStack.pop();
-minStack.top();      --> Returns 0.
-minStack.getMin();   --> Returns -2.
+minStack.top();    // return 0
+minStack.getMin(); // return -2
+ 
 
+Constraints:
+
+Methods pop, top and getMin operations will always be called on non-empty stacks.
 '''
 
 
+
+from collections import namedtuple
+Entry = namedtuple('Entry', 'element min_val')
 
 class MinStack:
 
@@ -31,38 +44,44 @@ class MinStack:
         """
         initialize your data structure here.
         """
-        self._stack = []
-
+        self.stack = []
+        
+        
 
     def push(self, x: int) -> None:
-
-        self._stack.append( (x, min( self.getMin(), x ) ) )
         
-    def pop(self) -> None:
+        cur_min = min( x, self.stack[-1].min_val ) if self.stack else x
 
-        self._stack.pop()
+        self.stack.append( Entry(x, cur_min) )
+
+            
+            
+    def pop(self) -> None:
+        
+        self.stack.pop()
+        
+        
 
     def top(self) -> int:
+        
+        return self.stack[-1].element
 
-        return self._stack[-1][0]
-
+    
+    
     def getMin(self) -> int:
         
-        if len( self._stack ) != 0:
-            return self._stack[-1][1]
-        else:
-            return 2**32
+        return self.stack[-1].min_val
 
 
 
-# n : number of elements to push in
+# N : number of elements to push in
 
 ## Time Complexity : O( 1 )
 #
 # MinStack's push(), pop(), top(), getMin() is of O( 1 ), 
 # getMin() is O(1) because we update and save global minimal on every push operation.
 
-## Space Complexity : O( n )
+## Space Complexity : O( N )
 #
 # The overhead is the space allocated to _stack[], its groth order is of O( N )
 
