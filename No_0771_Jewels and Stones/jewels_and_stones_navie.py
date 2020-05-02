@@ -34,14 +34,17 @@ class Solution:
         return count_of_stone_j
 
 
-## Time Complexity: O( N )
-#
-# Since description guarantees J has no repetitions, thus checking s in j takes O(1)
-# As a result, the overhead in time is the for loop of O( N )
+# m : the length of J
+# n : the length of S
 
+## Time Complexity: O( m * n )
+#
+# The overhead in time is the cost of for loop, of O( m ), and the cost of S.count(j), of O( n ).
+# It takes O( m*n )
+ 
 ## Space Complexity: O( 1 )
 #
-# The overhead in space is variable for math operation.
+# The overhead in space is the storage for loop index, which are of O( 1 ).
 
 def test_bench():
 
