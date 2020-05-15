@@ -70,6 +70,6 @@ class Solution:
 #
 # Due to the groth rate of Catalan(n), it is  of O( 4^N )
 
-## Space Complexity : O( N )
+## Space Complexity : O( 4^N )
 #
-# The overhead in space is the storage for look-up table, bst_dp_table, which is of O( N ).
+# The overhead in space is the storage for look-up table, bst_dp_table, which is of O( 4^N ).
