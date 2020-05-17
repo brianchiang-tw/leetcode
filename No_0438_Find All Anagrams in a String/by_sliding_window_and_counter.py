@@ -123,8 +123,6 @@ def test_bench():
     
     return 
 
-    return
-
 
 
 if __name__ == '__main__':
