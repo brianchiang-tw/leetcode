@@ -40,13 +40,12 @@ The substring with start index = 2 is "ab", which is an anagram of "ab".
 
 
 from typing import List
-from collections import Counter
 
 class Solution:
     def findAnagrams(self, s: str, p: str) -> List[int]:
         
         def helper( s: str, p: str):
-            signature, size_p = Counter(p), len(p)
+            signature, size_p = sum( map(hash,p) ), len(p)
             size_s = len(s)
 
             if size_s * size_p == 0 or size_p > size_s :
@@ -55,40 +54,33 @@ class Solution:
                 # Reject oversize pattern
                 return []
 
-            cur_signature = Counter(s[:size_p])
+            cur_signature = sum( map( hash, (s[:size_p]) ) )
 
-            for idx in range( size_p, size_s ):
+            for tail_of_window in range( size_p, size_s ):
 
-                head_of_window = idx - size_p
+                head_of_window = tail_of_window - size_p
 
                 if cur_signature == signature:
                     yield head_of_window
 
-                new_char, old_char = s[idx], s[ head_of_window ]
+                new_char, old_char = s[tail_of_window], s[ head_of_window ]
 
-                cur_signature[ new_char ] += 1
+                cur_signature += ( hash(new_char) - hash(old_char) )
 
-                if cur_signature[ old_char ] > 1:
-                    cur_signature[ old_char ]-= 1
-                else:
-                    del cur_signature[ old_char ]
-
+            # handle for last iteration    
             if cur_signature == signature:
                 yield ( size_s - size_p )
         
         # -----------------------
-        return list( helper(s, p) )
+        return [ *helper(s, p) ]
 
 
 
 # n : the character length of input s
-# k : the character length of input p
 
-## Time Complexity: O( n * k )
+## Time Complexity: O( n  )
 #
-# The overhead in time is the for loop, iterating on s, of O( n ), and
-# the signature comparison, of O( k ).
-# It takes O( n * k ) in total.
+# The overhead in time is the for loop, iterating on s, which is of O( n ).
 
 ## Space Complexity: O( n )
 #
@@ -122,8 +114,6 @@ def test_bench():
         print( Solution().findAnagrams( *t ) )
     
     return 
-
-    return
 
 
 
