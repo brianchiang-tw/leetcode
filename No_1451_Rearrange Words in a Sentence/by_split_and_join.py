@@ -67,6 +67,19 @@ class Solution:
 
 
 
+# n : the number of words in input string, str
+# k : the average length of words
+
+## Time Complexity: O( nk + n log n )
+#
+# The overhead in time is the cost of token splitting and token merge, of O( nk ), and the cost of sorting of O( n log n ).
+
+## Space Complexity: O( nk )
+#
+# The overhead in space is the cost for temporary storage, words, which is of O( nk )
+
+
+
 def test_bench():
 
     # expected output is in the comment
