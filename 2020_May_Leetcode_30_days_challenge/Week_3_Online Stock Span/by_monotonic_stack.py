@@ -87,13 +87,13 @@ class StockSpanner:
 def test_bench():
 
     S = StockSpanner()
-    print( S.next(100) )    # returns 1,
-    print( S.next(80) )     # returns 1,
-    print( S.next(60) )     # returns 1,
-    print( S.next(70) )     # returns 2,
-    print( S.next(60) )     # returns 1,
-    print( S.next(75) )     # returns 4,
-    print( S.next(85) )     # returns 4,
+    print( S.next(100) )    # returns 1
+    print( S.next(80) )     # returns 1
+    print( S.next(60) )     # returns 1
+    print( S.next(70) )     # returns 2
+    print( S.next(60) )     # returns 1
+    print( S.next(75) )     # returns 4
+    print( S.next(85) )     # returns 4
 
 
 if __name__ == '__main__':
