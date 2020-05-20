@@ -75,7 +75,7 @@ class Solution:
 
 ## Space Complexity: O( N )
 #
-# The overhead in time is the bfs_queue as well as traversal_path
+# The overhead in space is the bfs_queue as well as traversal_path
 # The size of them grow with the number of nodes on order O( N )
 
 
