@@ -89,7 +89,7 @@ class Solution:
 
 ## Time Complexity: O( n )
 #
-# The overhead in time is the cost of in-order traversa, which is of O( n ) at most
+# The overhead in time is the cost of in-order traversal, which is of O( n ) at most
 
 ## Space Complexity: O( n )
 # 
