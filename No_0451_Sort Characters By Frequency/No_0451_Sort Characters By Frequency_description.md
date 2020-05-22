@@ -15,6 +15,9 @@ Output:
 Explanation:
 'e' appears twice while 'r' and 't' both appear once.
 So 'e' must appear before both 'r' and 't'. Therefore "eetr" is also a valid answer.
+
+
+
 Example 2:
 
 Input:
@@ -26,6 +29,9 @@ Output:
 Explanation:
 Both 'c' and 'a' appear three times, so "aaaccc" is also a valid answer.
 Note that "cacaca" is incorrect, as the same characters must be together.
+
+
+
 Example 3:
 
 Input:
