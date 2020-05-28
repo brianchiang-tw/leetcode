@@ -99,7 +99,7 @@ def test_bench():
     3
     5
     '''
-
+ 
     for t in test_data:
         print( Solution().minDistance( *t ) )
     
