@@ -30,6 +30,7 @@ class Solution:
             # Quick response for empty list
             return 0
         
+        # base case length is 1
         max_increasing_len = [ 1 for _ in range(size) ]
         
         for end_idx in range(1, size):
