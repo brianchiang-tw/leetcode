@@ -1,0 +1,1 @@
+https://leetcode.com/problems/delete-node-in-a-linked-list/discuss/469072/Python-sol%3A-victim-node-operation-w-Visualization
