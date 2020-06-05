@@ -1,0 +1,1 @@
+https://leetcode.com/problems/random-pick-with-weight/discuss/671733/Python-sol-by-dice-roller-w-Visualization
