@@ -1,0 +1,1 @@
+https://leetcode.com/problems/search-insert-position/discuss/519363/Python-O(log-n)-sol-by-binary-search.-with-Hint
