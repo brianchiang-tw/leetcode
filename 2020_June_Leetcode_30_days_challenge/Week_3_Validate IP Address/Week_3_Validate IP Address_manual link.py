@@ -1,0 +1,1 @@
+https://leetcode.com/problems/validate-ip-address/discuss/95484/PythonJava-Easy-Understand-Solution
