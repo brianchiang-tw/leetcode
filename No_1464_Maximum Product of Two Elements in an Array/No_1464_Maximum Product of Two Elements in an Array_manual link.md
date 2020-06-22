@@ -1,0 +1,1 @@
+https://leetcode.com/problems/maximum-product-of-two-elements-in-an-array/discuss/699731/Python-O(n)-by-linear-scan.-w-Comment
