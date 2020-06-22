@@ -1,0 +1,1 @@
+https://leetcode.com/problems/h-index/discuss/694842/python-sol-by-sorting-w-comment

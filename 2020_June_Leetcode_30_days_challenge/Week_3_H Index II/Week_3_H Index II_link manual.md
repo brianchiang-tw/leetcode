@@ -1,0 +1,1 @@
+https://leetcode.com/problems/h-index-ii/discuss/694894/Python-by-binary-search.-w-Comment
