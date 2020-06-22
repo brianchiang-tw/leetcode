@@ -1,0 +1,1 @@
+https://leetcode.com/problems/running-sum-of-1d-array/discuss/699718/Python-O(n)-by-itertaion-w-visualization
