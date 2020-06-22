@@ -1,0 +1,1 @@
+https://leetcode.com/problems/shuffle-the-array/discuss/699743/Python-sol-by-iterator-w-Comment
