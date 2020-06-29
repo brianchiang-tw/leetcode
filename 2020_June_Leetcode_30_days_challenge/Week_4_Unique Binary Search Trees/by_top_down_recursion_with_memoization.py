@@ -112,9 +112,9 @@ class Solution:
 #
 # The overhead in time is the cost of catalan number computation, which is of O( 3^n )
 
-## Space Complexity: O( 1 )
+## Space Complexity: O( n )
 #
-# The overhead in space is the cost of temporary variable, which is of O( 1 )
+# The overhead in space is the storage of num_of_tree_table, which is of O( n )
 
 
 import unittest

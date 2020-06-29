@@ -52,7 +52,7 @@ class Solution:
 
 ## Space Complexity: O( 1 )
 #
-# The overhead in space is the cost of temporary variable, which is of O( 1 )
+# The overhead in space is the storage of temporary variable, which is of O( 1 )
 
 
 import unittest
