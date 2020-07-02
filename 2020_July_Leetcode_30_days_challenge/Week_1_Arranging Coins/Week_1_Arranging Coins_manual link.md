@@ -1,0 +1,1 @@
+https://leetcode.com/problems/arranging-coins/discuss/448195/Python-O(1)-solution-with-quadratic-formula-of-run-time-~-95-%2B
