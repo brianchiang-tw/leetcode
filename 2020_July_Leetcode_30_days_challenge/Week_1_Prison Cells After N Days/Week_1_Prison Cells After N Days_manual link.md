@@ -1,0 +1,1 @@
+https://leetcode.com/problems/prison-cells-after-n-days/discuss/717763/Python-sol-by-simulation-w-Comment
