@@ -1,0 +1,1 @@
+https://leetcode.com/problems/island-perimeter/discuss/724204/Python-sol-by-simple-counting-w-Comment
