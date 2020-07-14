@@ -1,0 +1,1 @@
+https://leetcode.com/problems/reverse-bits/discuss/468824/Python-O(-1-)-sol.-based-on-bit-manipulation
