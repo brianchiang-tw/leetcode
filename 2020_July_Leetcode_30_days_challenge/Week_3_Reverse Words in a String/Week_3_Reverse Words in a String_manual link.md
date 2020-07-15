@@ -1,0 +1,1 @@
+https://leetcode.com/problems/reverse-words-in-a-string/discuss/439385/Pythonic-O(-n-)-sol.-by-native-string-method-93%2B-With-explanation
