@@ -107,15 +107,16 @@ class Solution:
             return []
                     
 
-# n : the length of prerequisites
+# V : the numbero of course
+# E : the length of prerequisites
 
-## Time Complexity: O( n )
+## Time Complexity: O( V + E )
 #
-# The overhead in time is the cost of DFS, which is of O( n ).
+# The overhead in time is the cost of DFS, which is of O( V + E ).
 
-## Space Complexity: O( n )
+## Space Complexity: O( V + E )
 #
-# The overhead in space is the storage for recursion call stack, which is of O( n ).
+# The overhead in space is the storage for recursion call stack, which is of O( V + E ).
 
 
 import unittest
