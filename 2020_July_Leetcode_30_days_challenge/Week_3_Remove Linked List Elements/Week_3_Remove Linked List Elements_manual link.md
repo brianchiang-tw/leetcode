@@ -1,0 +1,1 @@
+https://leetcode.com/problems/remove-linked-list-elements/discuss/612668/Two-python-sol-sharing-w-Comment
