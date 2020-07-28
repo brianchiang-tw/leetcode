@@ -26,12 +26,15 @@ class Solution:
 
         xor_result = reduce(xor, nums)
 
+        # mask is the right-most 1 of xor result
+        # use mask to separate nums into two groups, one group contains single_num_a, the other contains single_num_b
         mask = xor_result & -xor_result
 
         single_num_a, single_num_b = 0, 0
 
         for number in nums:
-
+            # separate and collect these two single numbers by masking
+            
             if number & mask:
                 single_num_a ^= number
             
