@@ -1,0 +1,1 @@
+https://leetcode.com/problems/detect-capital/discuss/486809/Python-O(-n-).-sol-by-native-string-method.-90%2B-With-explanation
