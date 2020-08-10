@@ -1,0 +1,1 @@
+https://leetcode.com/problems/find-kth-bit-in-nth-binary-string/discuss/783782/Python-by-recursion-and-mapping-w-Visualization
