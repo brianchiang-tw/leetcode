@@ -1,0 +1,1 @@
+https://leetcode.com/problems/valid-palindrome/discuss/468071/Two-python-O(-n-)-sol-sharing
