@@ -1,0 +1,1 @@
+https://leetcode.com/problems/minimum-cost-to-cut-a-stick/discuss/783577/Python-by-DP-%2B-memoization-w-Comment
