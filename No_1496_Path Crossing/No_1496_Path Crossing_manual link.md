@@ -1,0 +1,1 @@
+https://leetcode.com/problems/path-crossing/discuss/711343/Python-O(n)-sol-by-set.-w-Comment
