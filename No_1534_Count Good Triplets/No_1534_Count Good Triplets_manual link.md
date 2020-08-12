@@ -1,0 +1,1 @@
+https://leetcode.com/problems/count-good-triplets/discuss/772455/Python-sol-with-generator-and-loops
