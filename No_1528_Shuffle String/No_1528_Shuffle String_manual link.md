@@ -1,0 +1,1 @@
+https://leetcode.com/problems/shuffle-string/discuss/762256/Python-sol-by-iteration
