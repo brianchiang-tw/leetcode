@@ -1,0 +1,1 @@
+https://leetcode.com/problems/can-make-arithmetic-progression-from-sequence/discuss/787590/Python-sol-by-fixed-difference.
