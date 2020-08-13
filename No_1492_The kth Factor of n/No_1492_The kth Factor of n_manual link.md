@@ -1,0 +1,1 @@
+https://leetcode.com/problems/the-kth-factor-of-n/discuss/711321/Python-by-factor-decomposition.-w-Comment
