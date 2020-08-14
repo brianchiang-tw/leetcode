@@ -1,0 +1,1 @@
+https://leetcode.com/problems/power-of-four/discuss/473268/Python-O(-log-n-)-sol.-based-on-bit-manipulation-run-time-90%2B
