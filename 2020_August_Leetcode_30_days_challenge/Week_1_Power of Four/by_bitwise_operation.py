@@ -67,19 +67,19 @@ class Testing( unittest.TestCase ):
         self.assertEqual(result, False)        
 
 
-    def test_case_3( self ):
+    def test_case_4( self ):
         
         result = Solution().isPowerOfFour( num=256 )
         self.assertEqual(result, True)               
 
 
-    def test_case_4( self ):
+    def test_case_5( self ):
         
         result = Solution().isPowerOfFour( num=1 )
         self.assertEqual(result, True)                  
 
 
-    def test_case_5( self ):
+    def test_case_6( self ):
             
         result = Solution().isPowerOfFour( num=-4 )
         self.assertEqual(result, False)     
