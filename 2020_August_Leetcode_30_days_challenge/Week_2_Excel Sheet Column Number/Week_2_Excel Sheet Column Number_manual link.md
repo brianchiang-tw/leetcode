@@ -1,0 +1,1 @@
+https://leetcode.com/problems/excel-sheet-column-number/discuss/800399/Python-by-recursion-and-iteration-w-Hint
