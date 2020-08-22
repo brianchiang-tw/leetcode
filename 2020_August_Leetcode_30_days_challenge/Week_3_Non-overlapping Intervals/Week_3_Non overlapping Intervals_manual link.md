@@ -1,0 +1,1 @@
+https://leetcode.com/problems/non-overlapping-intervals/discuss/91785/Python-short-(8-lines)-greedy-solution-with-explanation
