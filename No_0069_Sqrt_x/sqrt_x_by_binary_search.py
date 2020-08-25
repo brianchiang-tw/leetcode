@@ -1,28 +1,21 @@
 class Solution:
     def mySqrt(self, x: int) -> int:
         
-        if x <= 1:
-            return x
+        left, right = 0, x
         
-        mid = x // 2
-        upper_bound = x
-        lower_bound = 0
+        while left <= right:
+            
+            mid = left + (right - left) // 2
+            square = mid ** 2
+            
+            if square <= x:
+                left = mid + 1
+            
+            elif square > x :
+                right = mid -1
+            
         
-        while lower_bound+1 != upper_bound:
-            
-            trial = mid ** 2
-            next_trial = (mid+1)**2
-            
-            if trial <= x < next_trial:
-                return mid
-            elif trial > x:
-                upper_bound = mid
-                mid = ( lower_bound + upper_bound )// 2
-            else:
-                lower_bound = mid
-                mid = ( lower_bound + upper_bound )// 2
-                
-        return lower_bound
+        return left-1
 
 
 
