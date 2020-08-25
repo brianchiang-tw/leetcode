@@ -1,0 +1,1 @@
+https://leetcode.com/problems/numbers-with-same-consecutive-differences/discuss/798643/Python-sol-by-DFS-w-Comment
