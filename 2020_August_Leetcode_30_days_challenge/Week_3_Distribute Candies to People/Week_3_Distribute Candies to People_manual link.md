@@ -1,0 +1,1 @@
+https://leetcode.com/problems/distribute-candies-to-people/discuss/796717/Python-sol-by-simulation-w-Comment
