@@ -1,0 +1,1 @@
+https://leetcode.com/problems/merge-intervals/discuss/810795/python-by-sort-merge-w-visualization
