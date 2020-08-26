@@ -1,0 +1,1 @@
+https://leetcode.com/problems/goat-latin/discuss/537218/Two-Pythonic-sol-sharing.-90%2B-w-Explanation
