@@ -1,0 +1,1 @@
+https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/discuss/805311/Python-O(n)-by-pool-sampling.-w-Visualization
