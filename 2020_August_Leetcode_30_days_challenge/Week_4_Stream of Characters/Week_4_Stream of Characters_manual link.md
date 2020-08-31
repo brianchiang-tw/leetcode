@@ -1,0 +1,1 @@
+https://leetcode.com/problems/stream-of-characters/discuss/807322/Python-by-search-in-Trie-w-Visualization
