@@ -98,6 +98,19 @@ class StreamChecker:
         return False
 
 
+# q: the number of user quert
+# s: the maximum character length of single word among words
+# n: the lnegth of input words
+
+## Time Complexity: O( q*s )
+#
+# The overhead in time is the cost of trie traversal from root to leaf, which is of O( q * s)
+
+## Space Complexity: O( n*s )
+#
+# The overhead in space is the storage for trie, which is of O( n*s )
+
+
 
 import unittest
 class Tesing( unittest.TestCase ):
