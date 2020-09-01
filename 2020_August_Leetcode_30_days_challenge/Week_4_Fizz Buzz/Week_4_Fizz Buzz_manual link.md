@@ -1,0 +1,1 @@
+https://leetcode.com/problems/fizz-buzz/discuss/493072/Python-O(-n-)-sol.-by-list-comprehension-and-iteration.-With-explanation
