@@ -1,0 +1,1 @@
+https://leetcode.com/problems/find-right-interval/discuss/814422/Python-O(-n-log-n-)-by-sort-and-bisection.-w-Comment
