@@ -1,0 +1,1 @@
+https://leetcode.com/problems/repeated-substring-pattern/discuss/826151/Python-by-fold-and-find-w-Simple-proof
