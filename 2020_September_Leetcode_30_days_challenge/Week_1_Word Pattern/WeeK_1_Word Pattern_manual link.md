@@ -1,0 +1,1 @@
+https://leetcode.com/problems/word-pattern/discuss/471173/Pythonic-sol.-based-on-native-map-zip-and-all.-run-time-85%2B
