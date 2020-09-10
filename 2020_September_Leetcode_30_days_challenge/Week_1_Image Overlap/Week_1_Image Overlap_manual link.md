@@ -1,0 +1,1 @@
+https://leetcode.com/problems/image-overlap/discuss/832472/Python-by-offset-vector-counting-w-Comment
