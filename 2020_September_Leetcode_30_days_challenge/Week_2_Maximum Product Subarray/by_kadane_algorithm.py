@@ -43,6 +43,17 @@ class Solution:
         return global_max
 
 
+# n : the length of input nums
+
+## Time Complexity: O( n )
+#
+# The overhead in time is the cost of for-loop iteration, which is of O( n )
+
+## Space Complexity: O( n )
+#
+# The overhead in space is the stroage for loop index and temporary variable, which is of O( 1 )
+
+
 import unittest
 class Testing( unittest.TestCase ):
 
