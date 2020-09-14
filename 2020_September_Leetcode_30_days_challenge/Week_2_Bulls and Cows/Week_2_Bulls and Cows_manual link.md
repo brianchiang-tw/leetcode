@@ -1,0 +1,1 @@
+https://leetcode.com/problems/bulls-and-cows/discuss/839541/Python-O(n)-by-dictionary-w-Comment
