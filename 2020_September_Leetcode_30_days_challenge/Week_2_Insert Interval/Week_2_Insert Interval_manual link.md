@@ -1,0 +1,1 @@
+https://leetcode.com/problems/insert-interval/discuss/844394/Python-O(-n-)-by-boundary-checking-w-Comment
