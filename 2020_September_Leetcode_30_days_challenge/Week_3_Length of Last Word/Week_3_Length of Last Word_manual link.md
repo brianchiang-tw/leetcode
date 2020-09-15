@@ -1,0 +1,1 @@
+https://leetcode.com/problems/length-of-last-word/discuss/646883/Python-by-functional-programming.-90%2B-w-Comment
