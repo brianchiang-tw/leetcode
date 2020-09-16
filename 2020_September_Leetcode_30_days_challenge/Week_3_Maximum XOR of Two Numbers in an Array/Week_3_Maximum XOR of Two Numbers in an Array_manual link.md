@@ -1,0 +1,1 @@
+https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/discuss/849102/Python-O(n)-by-Trie-with-binary-notation-w-Comment
