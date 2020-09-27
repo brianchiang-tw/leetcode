@@ -1,0 +1,1 @@
+https://leetcode.com/problems/sequential-digits/discuss/524979/Python-DFS-and-pruning.-80%2B-w-Hint
