@@ -79,6 +79,18 @@ class Solution:
 
 
 
+# n : the length of candidates
+# t : the value of target
+
+## Time Complexity: O( n * 2 ^ n )
+#
+# The overhead in time is the cost of dfs, which is of O( n * 2 ^ n )
+
+## Space Complexit: O( t )
+#
+# The overhead in space is the storage for recursion call stack, which is of O( t )
+
+
 def test_bench():
 
 	test_data = [
