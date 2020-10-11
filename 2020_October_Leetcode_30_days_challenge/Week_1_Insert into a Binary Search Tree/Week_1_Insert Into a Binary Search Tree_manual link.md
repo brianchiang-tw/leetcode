@@ -1,0 +1,1 @@
+https://leetcode.com/problems/insert-into-a-binary-search-tree/discuss/512666/2-Python-O(n)-sol-by-BST-property.-With-hint-and-explanation
