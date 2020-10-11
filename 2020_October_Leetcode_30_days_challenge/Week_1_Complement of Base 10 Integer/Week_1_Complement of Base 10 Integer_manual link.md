@@ -1,0 +1,1 @@
+https://leetcode.com/problems/complement-of-base-10-integer/discuss/493788/Two-Python-O(-log-n-)-sol.-by-str-operation-and-XOR-masking-With-comment
