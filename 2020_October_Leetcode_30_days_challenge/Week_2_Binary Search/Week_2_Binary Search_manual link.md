@@ -1,0 +1,1 @@
+https://leetcode.com/problems/binary-search/discuss/495026/Python-log(-n-)-sol.-by-divide-and-conquer.-With-explanation
