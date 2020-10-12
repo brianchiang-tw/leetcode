@@ -1,0 +1,1 @@
+https://leetcode.com/problems/rotate-list/discuss/883130/Python-O(n)-by-link-and-break-w-Comment
