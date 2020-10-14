@@ -1,0 +1,1 @@
+https://leetcode.com/problems/buddy-strings/discuss/890964/Python-O(n)-by-iteration-w-Comment
