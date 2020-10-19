@@ -67,18 +67,18 @@ class Solution:
 
 import unittest
 
-class Testing( unittest.Testcase ):
+class Testing( unittest.TestCase ):
 
     def test_case_1( self ):
 
         result = Solution().findRepeatedDnaSequences( s="AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT" )
-        self.assertEqual(result, ["AAAAACCCCC","CCCCCAAAAA"])
+        self.assertCountEqual(result, ["AAAAACCCCC","CCCCCAAAAA"])
 
     
     def test_case_2( self ):
 
         result = Solution().findRepeatedDnaSequences( s="AAAAAAAAAAAAA" )
-        self.assertEqual(result, ["AAAAAAAAAA"])
+        self.assertCountEqual(result, ["AAAAAAAAAA"])
 
 
 
