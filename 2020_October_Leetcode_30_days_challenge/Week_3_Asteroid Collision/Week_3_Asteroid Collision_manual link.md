@@ -1,0 +1,1 @@
+https://leetcode.com/problems/asteroid-collision/discuss/904021/Python-O(n)-by-stack-and-simulation-w-Comment
