@@ -1,0 +1,1 @@
+https://leetcode.com/problems/minimum-depth-of-binary-tree/discuss/629657/Python-O(n)-by-DFS-and-BFS-85%2B-w-Comment
