@@ -1,0 +1,1 @@
+https://leetcode.com/problems/maximize-distance-to-closest-person/discuss/914790/Python-O(n)-by-space-arrangement.-w-Hint
