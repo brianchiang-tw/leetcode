@@ -1,0 +1,1 @@
+https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/discuss/527412/Python-O(n)-sol.-by-binary-notation.-85-w-Hint
