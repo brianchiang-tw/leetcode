@@ -1,0 +1,1 @@
+https://leetcode.com/problems/insertion-sort-list/discuss/920394/Python-O(n2)-by-in-place-node-swap-w-Comment
