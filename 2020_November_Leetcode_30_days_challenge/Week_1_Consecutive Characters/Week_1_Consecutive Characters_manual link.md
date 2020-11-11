@@ -1,0 +1,1 @@
+https://leetcode.com/problems/consecutive-characters/discuss/637217/Python-O(n)-by-linear-scan.-w-Comment
