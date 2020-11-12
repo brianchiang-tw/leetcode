@@ -1,0 +1,1 @@
+https://leetcode.com/problems/minimum-height-trees/discuss/923055/Python-O(n)-by-leave-node-removal-w-Visualization
