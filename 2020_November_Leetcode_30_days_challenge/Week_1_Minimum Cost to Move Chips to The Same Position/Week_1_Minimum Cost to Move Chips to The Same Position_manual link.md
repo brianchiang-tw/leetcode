@@ -1,0 +1,1 @@
+https://leetcode.com/problems/minimum-cost-to-move-chips-to-the-same-position/discuss/593111/Python-O(-n-)-sol-with-even-odd-judgement.-90%2B-w-Comment
