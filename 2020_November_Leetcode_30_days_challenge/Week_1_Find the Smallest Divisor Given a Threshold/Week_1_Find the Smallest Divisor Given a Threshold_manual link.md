@@ -1,0 +1,1 @@
+https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/discuss/925450/Python-O(-n-log-m-)-by-binary-search-w-Hint
