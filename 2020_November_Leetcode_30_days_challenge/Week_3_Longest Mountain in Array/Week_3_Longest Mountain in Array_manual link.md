@@ -1,0 +1,1 @@
+https://leetcode.com/problems/longest-mountain-in-array/discuss/938696/Python-O(n)-by-height-comparison-w-Comment
