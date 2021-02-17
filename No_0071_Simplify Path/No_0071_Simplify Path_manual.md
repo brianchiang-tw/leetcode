@@ -1,0 +1,1 @@
+https://leetcode.com/problems/simplify-path/discuss/1050624/Python-by-stack-w-Comment
