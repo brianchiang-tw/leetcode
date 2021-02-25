@@ -45,7 +45,7 @@ class Solution:
 # N : total number of strings in input list
 # S : the shortest length among all input strings, is constant
 
-# Time complexity
+## Time complexity
 # O( NS )       
 # Each for loop take O(N) to make a set
 # for loop iterates O(S) times totaly
@@ -53,32 +53,28 @@ class Solution:
 # To sum up, time complexoty = O(  N * S ) = O( NS ) = O ( N )
 
 
- # Space complexity
- # O( S ) for saving the longest common prefix (at most equalt to shortest string on best chance)
- # It is O( 1 ) in general
+## Space complexity
+# O( S ) for saving the longest common prefix (at most equalt to shortest string on best chance)
+# It is O( 1 ) in general
 
 
-def test_bench():
+import unittest
 
-    test_strings_1 = ["flower", "flow", "flight"]
-    test_strings_2 = ["meow", "moo", "bark"]
+class Testing( unittest.TestCase ):
 
-    output_1 = Solution().longestCommonPrefix( test_strings_1 )
-    print( output_1 )
+    def test_case_1( self ):
 
-    output_2 = Solution().longestCommonPrefix( test_strings_2 )
-    print( output_2 )
+        result = Solution().longestCommonPrefix( strs=["flower", "flow", "flight"] )
+        self.assertEqual(result, 'fl')
 
-    # expected output
-    # Note: 
-    # the second output is "", empty string, 
-    # because "meow", "moo", and "bark" have no common sequence at all.
-    '''
-    fl
+    
+    def test_case_2( self ):
 
-    '''
+        result = Solution().longestCommonPrefix( strs=["meow", "moo", "bark"] )
+        self.assertEqual(result, '')
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
 
-    test_bench()
+    unittest.main()
+
