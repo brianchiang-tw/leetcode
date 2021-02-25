@@ -1,0 +1,1 @@
+https://leetcode.com/problems/trim-a-binary-search-tree/discuss/498640/Python-O(-n-)-sol-by-recursion-and-pruning.-75%2B-With-Explanation
