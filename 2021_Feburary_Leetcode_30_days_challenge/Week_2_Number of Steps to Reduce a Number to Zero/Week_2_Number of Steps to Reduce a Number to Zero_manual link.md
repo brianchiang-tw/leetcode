@@ -1,0 +1,1 @@
+https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/discuss/505915/2-python-log(n)-sol.-by-simulation-and-math-analysis.-90%2B-With-explanation
