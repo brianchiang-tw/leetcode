@@ -1,0 +1,1 @@
+https://leetcode.com/problems/shortest-distance-to-a-character/discuss/527161/Python-O(n)-by-propagation-85%2B-w-Diagram
