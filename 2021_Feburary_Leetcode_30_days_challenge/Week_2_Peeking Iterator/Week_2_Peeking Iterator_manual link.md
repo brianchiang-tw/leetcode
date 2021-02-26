@@ -1,0 +1,1 @@
+https://leetcode.com/problems/peeking-iterator/discuss/1055955/Python-by-looking-ahead-w-Hint
