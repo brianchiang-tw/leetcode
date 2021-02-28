@@ -43,51 +43,55 @@ the gap between the 5th and 6th stone is too large.
 
 
 
-from collections import deque
+
 from typing import List
-class Solution:
-    def canCross(self, stones: List[int]) -> bool:
+class Solution(object):
+    def canCross(self, stones):
         
-        stone_set = set( stones )
-        destination = stones[-1]
+        # total number of valid jump index
+        n = len(stones)
+        
+        # valid jump index
+        stone_set = set(stones)
+        
+        # record of visited status
         visited = set()
         
-        traversal_queue = deque()
-
-        if 1 not in stone_set:
-            # Quick response:
-            # Reject if first move from 0 to 1 by one step is failed
-            return False
+        # source stone index, destination stone index
+        source, destination = stones[0], stones[n-1]
         
-        visited.add( (1, 1) )
-        traversal_queue.append( (1,1) )
+        # ----------------------------------------
         
-        # Start BFS traversal with 0->1 with one step as initial condition
-        while traversal_queue:
+        def frog_jump( cur_idx, cur_step):
             
-            for _ in range(len(traversal_queue)):
+            # Compute current position
+            cur_move = cur_idx + cur_step
+            
+			
+			## Base cases:
+            if (cur_step <= 0) or (cur_move not in stone_set) or ( (cur_idx, cur_step) in visited ):
                 
-                cur_stone_index, prev_step = traversal_queue.pop()
+                # Reject on backward move
+                # Reject on invalid move
+                # Reject on repeated path
+                return False
+            
+            elif cur_move == destination:
                 
-                if cur_stone_index == destination:
-                    return True
-                
-                for cur_step in {prev_step+1, prev_step, prev_step-1}:
-                    
-                    if cur_step <= 0:
-                        # Frog can only jump in the forward direction
-                        continue
-                    
-                    # compute next jump, and check with correctness and no repetition
-                    next_jump = cur_stone_index+cur_step
-                    if (2**31 > next_jump > 0) and (next_jump in stone_set) and ( (next_jump, cur_step) not in visited):
-                    
-                        # update current moving into visited set    
-                        visited.add( (next_jump, cur_step) )
-                        # add next jump into traversal queue
-                        traversal_queue.append( (next_jump, cur_step) )
-                        
-        return False
+                # Accept on destination arrival
+                return True
+            
+			
+			## General cases:
+			
+            # mark current status as visited
+            visited.add( (cur_idx, cur_step) )
+            
+            # explore all possible next move
+            return any( frog_jump(cur_move, cur_step + step_offset) for step_offset in (1, 0, -1) )
+        
+        # ----------------------------------------
+        return frog_jump(cur_idx=source, cur_step=1)
 
 
 
@@ -95,12 +99,11 @@ class Solution:
 
 ## Time Complexity: O( n )
 #
-# The overhead in time is the cost of BFS traversal on 1D linked list, which is of O( n ).
+# The overhead in time is the cost of DFS traversal on 1D linked list, which is of O( n ).
 
 ## Space Complexity: O( n )
 #
-# The overhead in space is the storage for traversal queue, which is of O( n ).
-
+# The overhead in space is the storage for recursion call stack, which is of O( n ).
 
 
 import unittest
