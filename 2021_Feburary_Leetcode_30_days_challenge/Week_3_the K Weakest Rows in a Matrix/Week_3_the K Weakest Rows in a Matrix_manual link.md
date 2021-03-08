@@ -1,0 +1,1 @@
+https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/discuss/497951/Python-sol.-based-on-sorting-and-itemgetter.-90%2B-With-explanation
