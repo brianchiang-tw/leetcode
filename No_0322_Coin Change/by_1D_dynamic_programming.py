@@ -62,34 +62,34 @@ class Solution:
 # The overhead in space is the storage for dynamic programming table, which is of O( n )
 
 
-from collections import namedtuple
-TestEntry = namedtuple('TestEntry', 'coins amount')
+import unittest
 
-def test_bench():
+class Testing( unittest.TestCase ):
 
-    test_data = [
-                    TestEntry( coins = [1, 2, 5], amount = 11),
-                    TestEntry( coins = [2], amount = 3),
-                    TestEntry( coins = [2], amount = 4),
-                    TestEntry( coins = [2], amount = 0),
-                ]
+    def test_case_1(self):
 
-    # expected output:
-    '''
-    3
-    -1
-    2
-    0
-    '''
+        result = Solution().coinChange(coins = [1, 2, 5], amount = 11 )
+        self.assertEqual(result, 3)
 
-    for t in test_data:
 
-        print( Solution().coinChange( *t ) )
+    def test_case_2(self):
 
-    return
+        result = Solution().coinChange(coins = [2], amount = 3)
+        self.assertEqual(result, -1)
 
+
+    def test_case_3(self):
+
+        result = Solution().coinChange(coins = [2], amount = 4)
+        self.assertEqual(result, 2)        
+
+
+    def test_case_4(self):
+
+        result = Solution().coinChange(coins = [2], amount = 0)
+        self.assertEqual(result, 0)  
 
 
 if __name__ == '__main__':
 
-    test_bench()
+    unittest.main()
