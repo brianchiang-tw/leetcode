@@ -22,3 +22,18 @@ func grayCode(n int) []int{
 	return gray_codes
 }
 //End of function grayCode
+
+
+
+
+// n : the value of input n
+
+//// Time Complexity: O( n )
+//
+// The overhead in time is the cost of list comprehension, which is of O( n )
+
+//// Space Complexity: O( n )
+//
+// The overhead in space is the storage for output list, which is of O( n )
+
+// type "run test -v" in console to run uniitest
