@@ -42,40 +42,35 @@ The number of keys in all rooms combined is at most 3000.
 from typing import List
 class Solution:
     def canVisitAllRooms(self, rooms: List[List[int]]) -> bool:
+		
+		# a set to record visited rooms
+        visited = set()
         
-        size = len( rooms )
-        
-        # flag table:
-        # index   : room index, from 0 to size-1
-        # value : True for opened and visited, False for locked
-        room_visit_table = [ False for i in range(size) ]
-        
-        
-        # all room are locked except for room_#0 is opened
-        room_visit_table[0] = True
-        
-        # room_#0 is initialized to be opened
-        available_room = set( [0] )
-        
-        
-        while available_room:
-
-            # Pop one room from set: available_room 
-            currnet_room = available_room.pop()
+        # --------------------------------
+        def dfs( cur_room ):
             
-            # Open and update current room as opened and visited
-            room_visit_table[currnet_room] = True
-
-            # Scan each key, and
-            # add those room_idx_with_key to available_room, if they are not visited yet.
-            for room_idx_with_key in rooms[currnet_room]:
-                
-                if not room_visit_table[room_idx_with_key]:
-                    available_room.add( room_idx_with_key )
+            if cur_room in visited:
+			
+				# base case aslo known as stop condition
+                return
             
+			# mark current room as visited
+            visited.add( cur_room )
             
-        # if all room is visited and opened, then return True
-        return all(room_visit_table)
+			# general case:
+            for next_room in rooms[cur_room]:
+				
+				# Visit next room in DFS
+                dfs( next_room )
+            
+            return
+        # --------------------------------
+        
+		# Launch DFS at room_#0
+        dfs(cur_room = 0)
+        
+		# Return true if all rooms are visited
+        return len(visited) == len(rooms)
 
 
 
@@ -92,8 +87,7 @@ class Solution:
 
 ## Space Complexity: O( n )
 #
-# The overhead in space is the storage for room_visit_table, and available_room, which are of O( n ).
-
+# The overhead in space is the storage for recursion call stack, which is of O( n )
 
 
 import unittest
