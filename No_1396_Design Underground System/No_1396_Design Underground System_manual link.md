@@ -1,0 +1,1 @@
+https://leetcode.com/problems/design-underground-system/discuss/1118322/pythongo-by-dictionary-w-hint
