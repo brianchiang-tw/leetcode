@@ -1,0 +1,1 @@
+https://leetcode.com/problems/reordered-power-of-2/discuss/1120140/pythongo-olog-n-by-digit-occurrence-mapping-w-comment
