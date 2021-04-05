@@ -1,0 +1,1 @@
+https://leetcode.com/problems/reconstruct-original-digits-from-english/discuss/1131114/PythonGo-O(n)-by-dictionary-w-Diagram
