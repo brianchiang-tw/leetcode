@@ -47,74 +47,77 @@ from typing import List
 class Solution:
     def isAlienSorted(self, words: List[str], order: str) -> bool:
         
-        dictionary = { letter : idx for idx, letter in enumerate(order) }
+		# Step 1:
+		# Build the index <-> character mapping relation based on givern alien order
+		
+        ## dictionary
+        # key: alien character
+        # value: index of alien character
+        char_idx_dict = { char: idx for idx, char in enumerate(order) }
         
-        def chk_in_order( word1: str, word2: str):
+        size = len(words)
+        
+		
+		# Step 2:
+        # Convert words to numerical mapping by dictionary
+		
+        numerical_mapping = [[char_idx_dict[char] for char in word] for word in words]
+        
+		
+		# Step 3:
+        # Check numerical mapping is sorted in ascending order
+		
+        for i in range(0, size-1):
             
-            for i in range( min(len(word1), len(word2) ) ):
+            if numerical_mapping[i] > numerical_mapping[i+1]:
                 
-                # current letter is out-of-order
-                if dictionary[ word1[i] ] > dictionary[ word2[i] ]:
-                    return False
-                
-                # current letter is in-order
-                elif dictionary[ word1[i] ] < dictionary[ word2[i] ]:
-                    return True
-                
-                # if current letter is the same, then compare next one
-            
-            # if all the same, then comapre string length
-            return ( len(word1) < len(word2) )
-        
-        # --------------------------------------------------------
-        
-        for idx in range( len(words)-1 ):
-            if not chk_in_order( words[idx], words[idx+1] ):
+                # Reject if we find out-of-order
                 return False
         
+        # Accept, otherwise.
         return True
 
 
 
-# n : the number of words in input list, words
-# k : the average character length of words
+# w : total character length of input string list
 
-## Time Complexity: O( n * k )
+## Time Complexity: O( w )
 #
-# The overhead in time is the cost of outter loop, iterating on words, which is of O( n ).
-# and the cost of function chk_in_order, which is of O( k ).
-# It takes O( n * k ) in total.
+# The overhead in time is the cost of character comparison, which is of O( w )
 
 ## Space Complexity: O( 1 )
 #
 # The overhead in space is the storage for dictionary, which is of O( 26 ) = O( 1 )
 
 
-from collections import namedtuple
-TestEntry = namedtuple('TestEntry', 'words order')
-def test_bench():
 
-    test_data = [
-                    TestEntry( words = ["hello","leetcode"], order = "hlabcdefgijkmnopqrstuvwxyz" ),
-                    TestEntry( words = ["word","world","row"], order = "worldabcefghijkmnpqstuvxyz" ),
-                    TestEntry( words = ["apple","app"], order = "abcdefghijklmnopqrstuvwxyz" ),
-                ]
+import unittest
 
-    # expected output:
-    '''
-    True
-    False
-    False
-    '''
+class Testing( unittest.TestCase ):
 
-    for t in test_data:
+    def setUp(self) -> None:
+        self.solver = Solution().isAlienSorted
+        return
 
-        print( Solution().isAlienSorted( words = t.words, order = t.order) )
+    def test_case_1( self ):
+        
+        result = self.solver(words = ["hello","leetcode"], order = "hlabcdefgijkmnopqrstuvwxyz")
+        self.assertEqual(result, True)
 
-    return 
+    def test_case_2( self ):
+        
+        result = self.solver(words = ["word","world","row"], order = "worldabcefghijkmnpqstuvxyz")
+        self.assertEqual(result, False)
+
+
+    def test_case_3( self ):
+        
+        result = self.solver(words = ["apple","app"], order = "abcdefghijklmnopqrstuvwxyz")
+        self.assertEqual(result, False)
 
 
 
 if __name__ == '__main__':
 
-    test_bench()
+    unittest.main()
+
