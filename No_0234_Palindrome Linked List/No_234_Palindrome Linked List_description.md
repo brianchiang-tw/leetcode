@@ -8,6 +8,8 @@ Example 1:
 
 Input: 1->2
 Output: false
+
+
 Example 2:
 
 Input: 1->2->2->1
