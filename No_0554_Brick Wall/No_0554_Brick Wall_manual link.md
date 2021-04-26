@@ -1,0 +1,1 @@
+https://leetcode.com/problems/brick-wall/discuss/1171054/PythonGo-O(mn)-by-dictionary-w-Visualization
