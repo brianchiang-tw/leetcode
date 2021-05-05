@@ -60,33 +60,38 @@ class Solution:
 # The overhead in space is the cost of temporarily variable, which is of O( 1 )
 
 
-from collections import namedtuple
-TestEntry = namedtuple('TestEntry', 'n')
-def test_bench():
 
-    test_data = [
-                    TestEntry( 27 ),
-                    TestEntry( 0 ),
-                    TestEntry( 9 ),
-                    TestEntry( 45 ),
-                ]
+import unittest
+
+class Testing( unittest.TestCase ):
+
+    def setUp(self) -> None:
+        self.solver = Solution().isPowerOfThress
+        return
+
+    def test_case_1( self ):
+
+        result = self.solver( n = 27 )
+        self.assertEqual(result, True)
+
     
+    def test_case_2( self ):
 
-    # expected output:
-    '''
-    True
-    False
-    True
-    False
-    '''
+        result = self.solver( n = 0 )
+        self.assertEqual(result, False)
 
-    for t in test_data:
-        print( Solution().isPowerOfThree( n = t.n) )
 
-    return
+    def test_case_3( self ):
 
+        result = self.solver( n = 9 )
+        self.assertEqual(result, True)
+
+    def test_case_4( self ):
+
+        result = self.solver( n = 45 )
+        self.assertEqual(result, False)
 
 
 if __name__ == '__main__':
 
-    test_bench()
+    unittest.main()        
