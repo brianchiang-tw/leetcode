@@ -1,0 +1,1 @@
+https://leetcode.com/problems/furthest-building-you-can-reach/discuss/1177478/Python-O(-n-log-k-)-by-min-heap-w-Comment
