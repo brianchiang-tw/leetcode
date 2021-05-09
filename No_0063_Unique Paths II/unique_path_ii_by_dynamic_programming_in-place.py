@@ -31,62 +31,44 @@ There are two ways to reach the bottom-right corner:
 '''
 
 
-# Dynamic Programming relation of unique path:
-
-# Base case:
-
-# DP(0, 0) = 1, if grid[0][0] == 0 without obstable
-# DP(0, 0) = 0, if grid[0][0] == 1 with obstable
-
-
-# DP(0, j) = DP(0, j-1), if grid[0][j] == 0 without obstacle, 
-# [0][j] is only reachable from one step left
-
-# DP(0, j) = 0, if grid[0][j] == 1 with obstacle
-
-
-# DP(i, 0) = DP(i-1, 0), if grid[i][0] == 0 without obstacle, 
-# [i][0] is only reachable from one step up
-
-# DP(i, 0) = 0, if grid[i][0] == 1 with obstacle
-
-
-
-# General case:
-# DP(i,j) = number of path reach to (i, j)
-#         = number of path reach to one step left + number of path reach to one step up
-#         = number of path reach to (i, j-1) + number of path to (i-1, j)
-#         = DP(i, j-1) + DP(i-1, j)
-
 
 
 from typing import List
 class Solution:
-    def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
-        num_rows = len(obstacleGrid)
-        num_cols = len(obstacleGrid[0])
+    def uniquePathsWithObstacles(self, obstacleGrid):
         
-        for m in range(num_rows):
-            for n in range(num_cols):
-                if obstacleGrid[m][n] == 1:
-                    obstacleGrid[m][n] = -1
+        allow_to_visit = lambda x, y: (1 - obstacleGrid[y][x] )
         
-        if obstacleGrid[0][0] != -1:
-            obstacleGrid[0][0] = 1
+        # height and width of matrix
+        h, w = len(obstacleGrid), len(obstacleGrid[0])
         
-        total_ways = 0
-        for m in range(num_rows):
-            for n in range(num_cols):
-                if obstacleGrid[m][n] != -1:
-                    if m > 0 and obstacleGrid[m-1][n] != -1:
-                        obstacleGrid[m][n] += obstacleGrid[m-1][n]
-                    if n > 0 and obstacleGrid[m][n-1] != -1:
-                        obstacleGrid[m][n] += obstacleGrid[m][n-1]
-                else:
-                    obstacleGrid[m][n] = 0
+        if h * w == 0 or not allow_to_visit(0, 0):
+            
+            # Quick response for invalid cases
+            return 0
+        
+        
+        # update [0][0] as start point with one valid path
+        obstacleGrid[0][0] = 1
+        
+        ## base case: leftmost column
+        for y in range(1, h):
+            obstacleGrid[y][0] = obstacleGrid[y-1][0] * allow_to_visit(0, y)
+        
+        
+        ## base case: top row
+        for x in range(1, w):
+            obstacleGrid[0][x] = obstacleGrid[0][x-1] * allow_to_visit(x, 0)
+        
+        
+        ## general cases
+        for y in range(1, h):
+            for x in range(1, w):
                 
-        return obstacleGrid[num_rows-1][num_cols-1]
-
+                # update path count from left and top
+                obstacleGrid[y][x] = (obstacleGrid[y][x-1] + obstacleGrid[y-1][x]) * allow_to_visit(x, y)
+        
+        return obstacleGrid[h-1][w-1]
 
 
 # m,n : dimension of rows and columns
@@ -97,9 +79,9 @@ class Solution:
 
 
 
-## Space Complexity: O( m * n )
+## Space Complexity: O( 1 )
 #
-# The overhead in space is the table of dynamic programming, path_dp, which is of O( m * n )
+# The overhead in space is the storage for loop index and temporary varaible, which is of O( 1 )
 
 
 def test_bench():
