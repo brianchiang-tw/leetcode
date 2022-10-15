@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" modified="2022-10-15T16:15:10.220Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.42" etag="ljK-Q5xNVbnkCY6Psb-D" version="16.2.6" type="github">
+  <diagram id="50G2GW0lztJ74-xLJCIO" name="Page-1">
+    <mxGraphModel dx="654" dy="396" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BJy-43SFJtkbLd4Y780d-1" value="..." style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="80" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BJy-43SFJtkbLd4Y780d-2" value="2" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="80" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BJy-43SFJtkbLd4Y780d-3" value="3" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="80" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BJy-43SFJtkbLd4Y780d-4" value="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#00B800;" parent="1" vertex="1">
+          <mxGeometry x="330" y="80" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BJy-43SFJtkbLd4Y780d-5" value="..." style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="80" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BJy-43SFJtkbLd4Y780d-7" value="S" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#00FFFF;" parent="1" vertex="1">
+          <mxGeometry x="120" y="180" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BJy-43SFJtkbLd4Y780d-8" value="S+2" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="190" y="180" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BJy-43SFJtkbLd4Y780d-9" value="S+5" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="180" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BJy-43SFJtkbLd4Y780d-10" value="S+6" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#007FFF;" parent="1" vertex="1">
+          <mxGeometry x="330" y="180" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BJy-43SFJtkbLd4Y780d-11" value="..." style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="180" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BJy-43SFJtkbLd4Y780d-12" value="Array" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="30" y="100" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BJy-43SFJtkbLd4Y780d-13" value="prefix sum" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="30" y="200" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BJy-43SFJtkbLd4Y780d-14" value="Given k = 6" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="510" y="100" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BJy-43SFJtkbLd4Y780d-16" value="curPrefixSum = S+6" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="330" y="340" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BJy-43SFJtkbLd4Y780d-17" value="" style="shape=singleArrow;direction=north;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="270" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BJy-43SFJtkbLd4Y780d-19" value="&lt;div&gt;&lt;span&gt;curPrefixSum - 6&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;= ( S+6 ) - 6&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;= S&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;We can find S is prefixMap, so we find a sub array sum k = 6 within {2, 3, 1}&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="100" y="380" width="470" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BJy-43SFJtkbLd4Y780d-20" value="2" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#00B800;" parent="1" vertex="1">
+          <mxGeometry x="190" y="80" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="BJy-43SFJtkbLd4Y780d-21" value="3" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#00B800;" parent="1" vertex="1">
+          <mxGeometry x="260" y="80" width="70" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
