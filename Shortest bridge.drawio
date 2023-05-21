@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-21T10:07:16.874Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.0.0" etag="jzr4JVohmo6PD9xBmyeJ" version="21.3.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-21T10:09:11.956Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.0.0" etag="2Yguu9hbGRVe1clu7t6y" version="21.3.2" type="github">
   <diagram name="第 1 页" id="Wzm5gtQ0w-wNAZiW5i13">
     <mxGraphModel dx="765" dy="1678" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
       <root>
@@ -616,22 +616,22 @@
         <mxCell id="QvoT3emotdxr4RAFUpKX-230" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3399FF;" vertex="1" parent="QvoT3emotdxr4RAFUpKX-197">
           <mxGeometry x="160" y="80" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="QvoT3emotdxr4RAFUpKX-231" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;Find 1st LAND cell, and mark it as source cell&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="450" y="-110" width="300" height="30" as="geometry" />
+        <mxCell id="QvoT3emotdxr4RAFUpKX-231" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;&lt;b&gt;Find 1st LAND cell, and mark it as source cell&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="-110" width="310" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="QvoT3emotdxr4RAFUpKX-232" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;Explorer from source cell, name this island as island 1&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="450" y="130" width="360" height="30" as="geometry" />
+        <mxCell id="QvoT3emotdxr4RAFUpKX-232" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;&lt;b&gt;Explorer from source cell, name this island as island 1&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="130" width="370" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="QvoT3emotdxr4RAFUpKX-233" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;Save island 1&#39;s boundary cell&lt;br&gt;Bounday cell is outmost cell, which is connected to WATER cell&lt;br&gt;&lt;br&gt;Those two red cells are boundary cells of island 1&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="450" y="370" width="420" height="60" as="geometry" />
+        <mxCell id="QvoT3emotdxr4RAFUpKX-233" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;&lt;b&gt;Save island 1&#39;s boundary cell&lt;br&gt;Bounday cell is outmost cell, which is connected to WATER cell&lt;br&gt;&lt;br&gt;Those two red cells are boundary cells of island 1&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="370" width="430" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="QvoT3emotdxr4RAFUpKX-234" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;After 2nd iteration,&amp;nbsp;&lt;/font&gt;&lt;font color=&quot;#000000&quot;&gt;, we have visited thost cells with 2s&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="QvoT3emotdxr4RAFUpKX-234" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;After 2nd iteration,&amp;nbsp;&lt;/font&gt;&lt;font color=&quot;#000000&quot;&gt;, we have visited thost cells with 2s&lt;/font&gt;&lt;/b&gt;&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="460" y="839" width="420" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="QvoT3emotdxr4RAFUpKX-235" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;Start explorer from boundary cell, &lt;br&gt;each step we add one more as distance&lt;br&gt;&lt;br&gt;After 1st iteration, we have visited those cells with 1s&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="QvoT3emotdxr4RAFUpKX-235" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;&lt;b&gt;Start explorer from boundary cell, &lt;br&gt;each step we add one more as distance&lt;br&gt;&lt;br&gt;After 1st iteration, we have visited those cells with 1s&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="460" y="620" width="420" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="QvoT3emotdxr4RAFUpKX-236" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;After 3rd itera&lt;/span&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;tion,&lt;/font&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;we have visited thost cells with 3s&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;&lt;br&gt;In addition, we see another LAND cell of the other island.&lt;br&gt;&lt;br&gt;So the shortest distance of between islands is 3&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="QvoT3emotdxr4RAFUpKX-236" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;After 3rd itera&lt;/span&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;tion,&lt;/font&gt;&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;we have visited thost cells with 3s&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;&lt;b&gt;&lt;br&gt;In addition, we see another LAND cell of the other island.&lt;br&gt;&lt;br&gt;So the shortest distance of between islands is 3&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="460" y="1090" width="420" height="80" as="geometry" />
         </mxCell>
         <mxCell id="QvoT3emotdxr4RAFUpKX-237" value="" style="group;fillColor=none;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" connectable="0" parent="1">
@@ -736,8 +736,8 @@
         <mxCell id="QvoT3emotdxr4RAFUpKX-270" value="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3399FF;" vertex="1" parent="QvoT3emotdxr4RAFUpKX-237">
           <mxGeometry x="160" y="80" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="QvoT3emotdxr4RAFUpKX-271" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;Demo: &lt;br&gt;One feasible path of bridge, in brown color, with shortest distance.&lt;br&gt;&lt;br&gt;Note:&lt;br&gt;This is just one example, there are still other feasible paths of bridge.&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="460" y="1340" width="440" height="80" as="geometry" />
+        <mxCell id="QvoT3emotdxr4RAFUpKX-271" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;&lt;b&gt;Demo: &lt;br&gt;One feasible path of bridge, in brown color, with shortest distance.&lt;br&gt;&lt;br&gt;Note:&lt;br&gt;This is just one example, there are still other feasible paths of bridge.&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1340" width="480" height="80" as="geometry" />
         </mxCell>
         <mxCell id="QvoT3emotdxr4RAFUpKX-272" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF66B3;" vertex="1" parent="1">
           <mxGeometry x="239" y="-320" width="40" height="40" as="geometry" />
@@ -751,16 +751,16 @@
         <mxCell id="QvoT3emotdxr4RAFUpKX-277" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#CC6600;" vertex="1" parent="1">
           <mxGeometry x="240" y="-200" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="QvoT3emotdxr4RAFUpKX-278" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;WATER cell&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="QvoT3emotdxr4RAFUpKX-278" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;&lt;b&gt;WATER cell&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="330" y="-275" width="300" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="QvoT3emotdxr4RAFUpKX-279" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;LAND cell&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="QvoT3emotdxr4RAFUpKX-279" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;&lt;b&gt;LAND cell&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="330" y="-313" width="300" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="QvoT3emotdxr4RAFUpKX-280" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;Boundary cell, outmost edge cell of LAND cell&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="330" y="-235" width="300" height="30" as="geometry" />
+        <mxCell id="QvoT3emotdxr4RAFUpKX-280" value="&lt;font style=&quot;font-size: 14px;&quot; color=&quot;#000000&quot;&gt;&lt;b&gt;Boundary cell, outmost edge cell of LAND cell&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="-235" width="320" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="QvoT3emotdxr4RAFUpKX-281" value="&lt;font color=&quot;#000000&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;Bridge cell&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="QvoT3emotdxr4RAFUpKX-281" value="&lt;font color=&quot;#000000&quot;&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Bridge cell&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="330" y="-195" width="300" height="30" as="geometry" />
         </mxCell>
       </root>
