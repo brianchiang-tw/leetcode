@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-25T11:54:27.449Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.0.0" etag="-j26hEbuNrtkgXJy1Nb-" version="21.3.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-25T12:01:30.284Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.0.0" etag="fGSM_6pegZegNNaoQKvu" version="21.3.2" type="github">
   <diagram name="第 1 页" id="L3YYOfRVzUbYMGYdMul0">
     <mxGraphModel dx="1961" dy="727" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -346,8 +346,8 @@
         <mxCell id="Uv0XRD-SDKMZK3PV6rSL-130" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4D4D4D;" vertex="1" parent="Uv0XRD-SDKMZK3PV6rSL-118">
           <mxGeometry x="800" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="Uv0XRD-SDKMZK3PV6rSL-131" value="Alice stop taking cards from now on i &amp;gt;= 7" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="611" y="1705" width="259" height="30" as="geometry" />
+        <mxCell id="Uv0XRD-SDKMZK3PV6rSL-131" value="&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Alice stop taking cards from now on i &amp;gt;= 7&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="611" y="1705" width="329" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Uv0XRD-SDKMZK3PV6rSL-132" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="50" y="1560" width="880" height="129" as="geometry" />
